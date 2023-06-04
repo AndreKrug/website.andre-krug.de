@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="de-DE" class="no-js">
+	<head>
+
+		<!-- ==============================================
+		Title and Meta Tags
+		=============================================== -->
+		<meta charset="utf-8">
+		<title>André Krug | andre-krug.de</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<!-- ==============================================
+		Favicons
+		=============================================== -->
+		<link rel="shortcut icon" href="assets/favicon.ico">
+		<link rel="apple-touch-icon" href="assets/MobileIconsAK_57x57.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="assets/MobileIconsAK_72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="assets/MobileIconsAK_114x114.png">
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/MobileIconsAK_144x144.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/MobileIconsAK_114x114.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/MobileIconsAK_72x72.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/MobileIconsAK_57x57.png">
+        <link rel="apple-touch-startup-image" href="assets/MobileIconsAK_57x57.png" />
+		
+		<!-- ==============================================
+		CSS
+		=============================================== -->    
+        <style>
+            header{display:block}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}body{margin:0}a{background:0 0}h1{margin:.67em 0}img{border:0}button,input{margin:0}button{text-transform:none}button{cursor:pointer;-webkit-appearance:button}button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}*,:after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-size:62.5%;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{font-size:14px;line-height:1.428571429;background-color:#fff}button,input{font-family:inherit;font-size:inherit;line-height:inherit}img{vertical-align:middle}.img-responsive{display:block;height:auto;max-width:100%}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}p{margin:0 0 10px}.text-center{text-align:center}h1{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:500;line-height:1.1;color:inherit}h1{margin-top:20px;margin-bottom:10px}h1{font-size:36px}ul{margin-top:0;margin-bottom:10px}.container{padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}.container:after,.container:before{display:table;content:" "}.container:after{clear:both}@media(min-width:768px){.container{width:750px}}@media(min-width:992px){.container{width:970px}}@media(min-width:1200px){.container{width:1170px}}label{display:inline-block;margin-bottom:5px;font-weight:700}.btn{display:inline-block;padding:6px 12px;margin-bottom:0;font-size:14px;font-weight:400;line-height:1.428571429;text-align:center;white-space:nowrap;vertical-align:middle;cursor:pointer;background-image:none;border:1px solid transparent;border-radius:4px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none}.fade{opacity:0;-webkit-transition:opacity .15s linear;transition:opacity .15s linear}.collapse{display:none}.nav{padding-left:0;margin-bottom:0;list-style:none}.nav:after,.nav:before{display:table;content:" "}.nav:after{clear:both}.nav>li{position:relative;display:block}.nav>li>a{position:relative;display:block;padding:10px 15px}.navbar{position:relative;min-height:50px;border:1px solid transparent}.navbar:after,.navbar:before{display:table;content:" "}.navbar:after{clear:both}@media(min-width:768px){.navbar{border-radius:4px}}.navbar-header:after,.navbar-header:before{display:table;content:" "}.navbar-header:after{clear:both}@media(min-width:768px){.navbar-header{float:left}}.navbar-collapse{max-height:340px;padding-right:15px;padding-left:15px;overflow-x:visible;border-top:1px solid transparent;box-shadow:inset 0 1px 0 rgba(255,255,255,.1);-webkit-overflow-scrolling:touch}.navbar-collapse:after,.navbar-collapse:before{display:table;content:" "}.navbar-collapse:after{clear:both}@media(min-width:768px){.navbar-collapse{width:auto;border-top:0;box-shadow:none}.navbar-collapse.collapse{display:block!important;height:auto!important;padding-bottom:0;overflow:visible!important}.navbar-collapse .navbar-nav.navbar-right:last-child{margin-right:-15px}}.container>.navbar-collapse,.container>.navbar-header{margin-right:-15px;margin-left:-15px}@media(min-width:768px){.container>.navbar-collapse,.container>.navbar-header{margin-right:0;margin-left:0}}.navbar-fixed-top{position:fixed;right:0;left:0;z-index:1030}@media(min-width:768px){.navbar-fixed-top{border-radius:0}}.navbar-fixed-top{top:0;border-width:0 0 1px}.navbar-brand{float:left}@media(min-width:768px){.navbar>.container .navbar-brand{margin-left:-15px}}.navbar-toggle{position:relative;float:right;padding:9px 10px;margin-top:8px;margin-right:15px;margin-bottom:8px;background-color:transparent;border:1px solid transparent;border-radius:4px}.navbar-toggle .icon-bar{display:block;width:22px;height:2px;border-radius:1px}.navbar-toggle .icon-bar+.icon-bar{margin-top:4px}@media(min-width:768px){.navbar-toggle{display:none}}.navbar-nav{margin:7.5px -15px}.navbar-nav>li>a{padding-top:10px;padding-bottom:10px;line-height:20px}@media(min-width:768px){.navbar-nav{float:left;margin:0}.navbar-nav>li{float:left}.navbar-nav>li>a{padding-top:15px;padding-bottom:15px}}@media(min-width:768px){.navbar-right{float:right!important}}.jumbotron{padding:30px;margin-bottom:30px;font-size:21px;font-weight:200;line-height:2.1428571435}.jumbotron p{line-height:1.4}@media screen and (min-width:768px){.jumbotron{padding-top:48px;padding-bottom:48px}}.close{float:right;font-size:21px;font-weight:700;line-height:1;color:#000;text-shadow:0 1px 0 #fff;opacity:.2;filter:alpha(opacity=20)}button.close{padding:0;cursor:pointer;background:0 0;border:0;-webkit-appearance:none}.modal{position:fixed;top:0;right:0;bottom:0;left:0;z-index:1040;display:none;overflow:auto;overflow-y:scroll}.modal.fade .modal-dialog{-o-transition:-o-transform .3s ease-out}.modal-dialog{position:relative;z-index:1050;padding:10px;margin-right:auto;margin-left:auto}.modal-content{position:relative;outline:0;-webkit-box-shadow:0 3px 9px rgba(0,0,0,.5);background-clip:padding-box}.modal-header{min-height:16.428571429px;padding:15px}.modal-body{position:relative;padding:20px}@media screen and (min-width:768px){.modal-dialog{width:600px;padding-top:30px;padding-bottom:30px}.modal-content{-webkit-box-shadow:0 5px 15px rgba(0,0,0,.5);box-shadow:0 5px 15px rgba(0,0,0,.5)}}.clearfix:after,.clearfix:before{display:table;content:" "}.clearfix:after{clear:both}@font-face{font-family:FontAwesome;src:url(../font/fontawesome-webfont.eot?v=3.2.1);src:url(../font/fontawesome-webfont.eot?#iefix&v=3.2.1) format('embedded-opentype'),url(../font/fontawesome-webfont.woff?v=3.2.1) format('woff'),url(../font/fontawesome-webfont.ttf?v=3.2.1) format('truetype'),url(../font/fontawesome-webfont.svg#fontawesomeregular?v=3.2.1) format('svg');font-weight:400;font-style:normal}[class^=icon-]{font-family:FontAwesome;font-weight:400;font-style:normal;text-decoration:inherit;-webkit-font-smoothing:antialiased;*margin-right:.3em}[class^=icon-]:before{text-decoration:inherit;display:inline-block;speak:none}a [class^=icon-]{display:inline}[class^=icon-]{display:inline;width:auto;height:auto;line-height:normal;vertical-align:baseline;background-image:none;background-position:0 0;background-repeat:repeat;margin-top:0}.icon-external-link:before{content:"\f08e"}.slides{margin:0;padding:0;list-style:none}.flexslider{padding:0}.flexslider .slides>li{display:none;-webkit-backface-visibility:hidden}.slides:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}.flexslider{margin:0 0 60px;background:#fff;border:4px solid #fff;position:relative;-webkit-border-radius:4px;-moz-border-radius:4px;-o-border-radius:4px;border-radius:4px;box-shadow:0 1px 4px rgba(0,0,0,.2);-webkit-box-shadow:0 1px 4px rgba(0,0,0,.2);-moz-box-shadow:0 1px 4px rgba(0,0,0,.2);-o-box-shadow:0 1px 4px rgba(0,0,0,.2);zoom:1}.flex-viewport{max-height:2000px;-webkit-transition:all 1s ease;-moz-transition:all 1s ease;transition:all 1s ease}.flexslider .slides{zoom:1}.navbar{margin:0;border-radius:0}body{font-family:Lato,sans-serif}h1{font-family:Lato,sans-serif;color:#295e94}h1{font-size:30px;line-height:30px;font-weight:300;text-transform:uppercase;letter-spacing:.02em}p{font-size:18px;line-height:24px;font-weight:300;letter-spacing:.01em;margin-bottom:20px}a{outline:0!important}a{color:#536177;text-decoration:none}body{color:#999;overflow-x:hidden}#main-nav .navbar-toggle{border:1px solid rgba(255,255,255,.5);border-radius:0}#main-nav .icon-bar{background:#fff}.btn-theme{color:#fff;background-color:#295e94;padding:15px 90px;font-size:24px;font-weight:300;text-transform:uppercase;border:0;border-radius:0;-webkit-transition:background-color .2s ease-out;transition:background-color .2s ease-out}.btn-theme [class*=icon]{margin-right:10px}.navbar-brand{padding:0 10px;font-size:30px;line-height:30px;font-weight:400;color:#fff}.navbar-brand span{font-size:24px;font-weight:300}#main-nav{background:0 0;color:#fff;box-shadow:0 0 0 transparent;-webkit-transition:background .3s ease-out;transition:background .3s ease-out}#main-nav .container{padding:30px 20px;-webkit-transition:padding .5s ease-out;transition:padding .5s ease-out}#main-nav .nav a{padding:0 10px;font-size:18px;line-height:54px;font-weight:400;background:0 0;color:#fff}#main-nav li{background:0 0;margin:0 10px;border:2px solid transparent}#main-nav .nav a{position:relative}#main-nav .nav a:before{position:absolute;bottom:-5px;left:50%;color:transparent;content:'•';text-shadow:0 0 transparent;font-size:16px;line-height:21px;-webkit-transition:text-shadow .3s,color .3s;-moz-transition:text-shadow .3s,color .3s;transition:text-shadow .3s,color .3s;-webkit-transform:translateX(-50%);-moz-transform:translateX(-50%);transform:translateX(-50%);pointer-events:none}#main-nav .nav li.active a:before{color:#fff;text-shadow:12px 0 #fff,-12px 0 #fff}.jumbotron{background:url(../assets/header-bg_small.jpg) no-repeat center center fixed;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;color:#295e94}header.jumbotron{padding:0;margin-bottom:0;min-height:500px}.jumbotron .left-col,.jumbotron .right-col{float:left}.jumbotron .message-box{width:90%;margin:300px auto 0;background:#fff;background:rgba(255,255,255,.9);padding:20px 0}.jumbotron .left-col{width:35%;text-align:right}.jumbotron .right-col{width:65%;text-align:left;overflow:hidden;border:0;box-shadow:none;background:0 0;margin:0;padding:0}.jumbotron .left-col p{display:inline-block;margin:0;padding:18px 5px 12px 30px;font-size:25px;font-weight:300;line-height:48px}.jumbotron .left-col p span{font-size:42px;font-weight:400}.jumbotron .right-col p{display:inline-block;margin:0;padding:10px 30px 10px 5px;font-size:80px;line-height:110px;font-weight:900;text-transform:uppercase}.jumbotron .home-slider .slides li{opacity:0;-webkit-ransition:opacity .4s ease-out;transition:opacity .4s ease-out}.jumbotron .home-slider .slides li.clone,.jumbotron .home-slider .slides li.flex-active-slide{opacity:1}.fade.modal{overflow-x:hidden}.modal.fade .modal-dialog{-webkit-transform:scale(0.7);-moz-transform:scale(0.7);-ms-transform:scale(0.7);transform:scale(0.7);opacity:0;-webkit-transition:all .3s;-moz-transition:all .3s;transition:all .5s}.modal-dialog{width:90%;max-width:1140px;padding-top:50px}.modal-content{border:0;border-radius:0;box-shadow:none;background-color:#fff}.modal-header{height:60px;border:0;border-bottom:1px solid #295e94;margin-bottom:10px}.modal-header .close{font-size:42px;line-height:42px;margin-top:0;-webkit-transition:all .2s ease-out;transition:all .2s ease-out}.modal-body .left-col{float:left;padding:0}.modal-body .left-col{width:50%;margin:0 50px 20px 0;position:relative}.modal-body .left-col{min-height:60px;background:0 0;z-index:1}.modal-body h1{color:#295e94;margin:200px 0 24px;font-size:32px}.modal-body .project-descr{color:#aaa;margin:0 0 24px}.modal-body .btn-theme{margin-top:48px}.modal-body .loader{position:absolute;left:50%;top:0;margin-top:27%;margin-left:-10px;width:30px;height:30px;background:url(../assets/loader.gif) no-repeat 50% 50%}.modal-body .image-wrapper{position:absolute;width:96%;top:4%;left:3%;border:0;z-index:-1;opacity:0;-webkit-transition:all .5s ease-out .7s;transition:all .5s ease-out .7s}#contact-form .form-group label{display:none;font-size:18px;line-height:24px;font-weight:400;text-transform:uppercase}@media (max-width:1199px){.jumbotron .left-col p{font-size:28px;line-height:32px}.jumbotron .left-col p span{font-size:36px}.jumbotron .right-col p{font-size:82px;line-height:82px}}@media (max-width:991px){.jumbotron .message-box{padding:10px 0}.jumbotron .left-col{width:100%;text-align:center}.jumbotron .left-col p{padding:10px}.jumbotron .right-col{width:100%;text-align:center}.jumbotron .right-col p{padding:10px}}@media (max-width:768px){#main-nav .navbar-brand{color:#295e94}#main-nav{background:#fff;border-bottom:1px solid #ddd}#main-nav .navbar-toggle{color:#295e94;border-color:#295e94}#main-nav .navbar-toggle .icon-bar{background:#295e94}#main-nav .container{padding:10px 20px}#main-nav .nav a{color:#295e94;line-height:42px;text-align:center}#main-nav .nav a:before{display:none}#main-nav .nav li.active a{box-shadow:0 0 0 1px}.jumbotron .left-col p{font-size:24px;line-height:28px}.jumbotron .left-col p span{font-size:32px}.jumbotron .right-col p{font-size:62px;line-height:62px}.modal-dialog{max-width:480px}.modal-body .left-col{width:100%}}@media (max-width:479px){.jumbotron .right-col p{font-size:38px;line-height:38px}p{font-size:16px;line-height:21px}.btn-theme{padding:15px 40px;font-size:18px}}
+        </style>
+
+        <script>
+            /*!
+             loadCSS: load a CSS file asynchronously.
+             [c]2014 @scottjehl, Filament Group, Inc.
+             Licensed MIT
+             */
+
+            /* exported loadCSS */
+            function loadCSS( href, before, media, callback ){
+                "use strict";
+                // Arguments explained:
+                // `href` is the URL for your CSS file.
+                // `before` optionally defines the element we'll use as a reference for injecting our <link>
+                // By default, `before` uses the first <script> element in the page.
+                // However, since the order in which stylesheets are referenced matters, you might need a more specific location in your document.
+                // If so, pass a different reference element to the `before` argument and it'll insert before that instead
+                // note: `insertBefore` is used instead of `appendChild`, for safety re: http://www.paulirish.com/2011/surefire-dom-element-insertion/
+                var ss = window.document.createElement( "link" );
+                var ref = before || window.document.getElementsByTagName( "script" )[ 0 ];
+                var sheets = window.document.styleSheets;
+                ss.rel = "stylesheet";
+                ss.href = href;
+                // temporarily, set media to something non-matching to ensure it'll fetch without blocking render
+                ss.media = "only x";
+                // DEPRECATED
+                if( callback ) {
+                    ss.onload = callback;
+                }
+
+                // inject link
+                ref.parentNode.insertBefore( ss, ref );
+                // This function sets the link's media back to `all` so that the stylesheet applies once it loads
+                // It is designed to poll until document.styleSheets includes the new sheet.
+                ss.onloadcssdefined = function( cb ){
+                    var defined;
+                    for( var i = 0; i < sheets.length; i++ ){
+                        if( sheets[ i ].href && sheets[ i ].href === ss.href ){
+                            defined = true;
+                        }
+                    }
+                    if( defined ){
+                        cb();
+                    } else {
+                        setTimeout(function() {
+                            ss.onloadcssdefined( cb );
+                        });
+                    }
+                };
+                ss.onloadcssdefined(function() {
+                    ss.media = media || "all";
+                });
+                return ss;
+            }
+            // load a file
+            loadCSS( "css/akrug.min.css" );
+            loadCSS( "css/fonts.css" );
+
+            
+        </script>
+        <noscript>
+            <link href="css/akrug.min.css" rel="stylesheet">
+            <link href='css/fonts.css' rel='stylesheet' type='text/css'>
+        </noscript>
+
+<!-- https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic,900-->
+
+        <!--<link rel="stylesheet" href="css/akrug.min.css">-->
+        
+        <!-- <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/flexslider.css">
+        <link rel="stylesheet" href="css/designr-theme-cyan.css">
+		-->
+		<!-- ==============================================
+		Fonts
+		=============================================== -->
+
+		
+		<!-- ==============================================
+		JS
+		=============================================== -->
+			
+		<!--[if lt IE 9]>
+			<script src="js/respond.min.js"></script>
+		<![endif]-->
+		
+		<!-- Modenizer vorher -->
+        <script type="text/javascript" async src="js/libs/modernizr.min.js"></script>
+
+        <!-- ==============================================
+		Meta Tags extended
+		=============================================== -->
+
+        <meta name="keywords" content="IT Projektleiter, Lean Startup, ATERN, DSDM, Kanban, Internet, Extranet, Web Projekte"/>
+        <meta name="description" content="Auf meiner Seite finden Sie Informationen über meine realisierte IT-Projekte sowie Informationen zu meiner Person"/>
+        <meta name="subject" content="IT Projektleiter">
+        <meta name="copyright" content="André Krug">
+        <meta name="language" content="DE">
+        <meta name="robots" content="index,follow" />
+        <!--<meta name="revised" content="Sunday, July 18th, 2010, 5:15 pm" />-->
+        <!-- <meta name="abstract" content="">
+        <meta name="topic" content="">
+        <meta name="summary" content="">
+        <meta name="Classification" content="Business">-->
+        <meta name="author" content="André Krug, andre.krug@outlook.de">
+        <!-- <meta name="designer" content="">-->
+        <meta name="copyright" content="André Krug">
+        <!-- <meta name="reply-to" content="email@hotmail.com">-->
+        <meta name="owner" content="André Krug">
+        <meta name="url" content="https://www.andre-krug.de">
+        <meta name="identifier-URL" content="https://www.andre-krug.de">
+        <!--<meta name="directory" content="submission">
+         <meta name="category" content="">-->
+        <meta name="coverage" content="Worldwide">
+        <meta name="distribution" content="Global">
+        <meta name="rating" content="General">
+        <meta name="revisit-after" content="7 days">
+        <meta http-equiv="Expires" content="0">
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="Cache-Control" content="no-cache">
+
+
+        <!-- ## OpenGraph Meta Tags
+        ToDo erstmal außen vor lassen
+        <meta name="og:title" content="The Rock"/>
+        <meta name="og:type" content="movie"/>
+        <meta name="og:url" content="http://www.imdb.com/title/tt0117500/"/>
+        <meta name="og:image" content="http://ia.media-imdb.com/rock.jpg"/>
+        <meta name="og:site_name" content="IMDb"/>
+        <meta name="og:description" content="A group of U.S. Marines, under command of..."/>
+
+        <meta name="fb:page_id" content="43929265776" />
+
+        <meta name="og:email" content="me@example.com"/>
+        <meta name="og:phone_number" content="650-123-4567"/>
+        <meta name="og:fax_number" content="+1-415-123-4567"/>
+
+        <meta name="og:latitude" content="37.416343"/>
+        <meta name="og:longitude" content="-122.153013"/>
+        <meta name="og:street-address" content="1601 S California Ave"/>
+        <meta name="og:locality" content="Palo Alto"/>
+        <meta name="og:region" content="CA"/>
+        <meta name="og:postal-code" content="94304"/>
+        <meta name="og:country-name" content="USA"/>
+
+        <meta property="og:type" content="game.achievement"/>
+        <meta property="og:points" content="POINTS_FOR_ACHIEVEMENT"/>
+        -->
+        <!-- Create Custom Meta Tags
+
+        <meta name="google-analytics" content="1-AHFKALJ"/>
+        <meta name="disqus" content="abcdefg"/>
+        <meta name="uservoice" content="asdfasdf"/>
+        <meta name="mixpanel" content="asdfasdf"/>
+        -->
+        <!-- ## Company/Service Meta Tags -->
+
+        <!-- #### ClaimID -->
+
+        <!-- <meta name="microid" content="mailto+http:sha1:e6058ed7fca4a1921cq91d7f1f3b8736cd3cc1g7" />-->
+
+        <!-- #### Apple Meta Tags
+
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta content="yes" name="apple-touch-fullscreen" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width = 320, initial-scale = 2.3, user-scalable = no">
+-->
+        <!-- #### Internet Explorer Meta Tags
+
+        <meta http-equiv="Page-Enter" content="RevealTrans(Duration=2.0,Transition=2)" />
+        <meta http-equiv="Page-Exit" content="RevealTrans(Duration=3.0,Transition=12)" />
+        <meta name="mssmarttagspreventparsing" content="true">
+        <meta http-equiv="X-UA-Compatible" content="chrome=1">
+        <meta name="msapplication-starturl" content="http://andre-krug.de"/>
+        <meta name="msapplication-window" content="width=800;height=600"/>
+        <meta name="msapplication-navbutton-color" content="red"/>
+        <meta name="application-name" content="André Krug - IT-Projektleiter"/>
+        <meta name="msapplication-tooltip" content="André Krug - IT-Projektleiter"/>
+        <meta name="msapplication-task" content="name=About;action-uri=/about/;icon-uri=/assets/favicon.ico" />
+        <meta name="msapplication-task" content="name=The Big List;action-uri=/the-big-list-of-javascript-css-and-html-development-tools-libraries-projects-and-books/;icon-uri=/images/list_links.ico" />
+        <meta name="msapplication-task" content="name=jQuery Posts;action-uri=/category/jquery/;icon-uri=/images/jquery.ico" />
+        <meta name="msapplication-task" content="name=Start Developing;action-uri=/category/javascript/;icon-uri=/images/script.ico" />
+        <link rel="shortcut icon" href="/images/favicon.ico" />
+-->
+        <!-- #### TweetMeme Meta Tags-->
+
+        <!-- <meta name="tweetmeme-title" content="Retweet Button Explained" />-->
+
+        <!-- #### Blog Catalog Meta Tags -->
+
+
+        <!-- <meta name="blogcatalog" />-->
+
+        <!-- #### Rails Meta Tags-->
+        <!-- <meta name="csrf-param" content="authenticity_token"/>
+        <meta name="csrf-token" content="/bZVwvomkAnwAI1Qd37lFeewvpOIiackk9121fFwWwc="/>
+        -->
+        <!-- #### Apple Tags -->
+
+        <!--<meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="format-detection" content="telephone=no">
+        <meta name= "viewport" content = "width = 320, initial-scale = 2.3, user-scalable = no">
+        <meta name= "viewport" content = "width = device-width">
+        <meta name = "viewport" content = "initial-scale = 1.0">
+        <meta name = "viewport" content = "initial-scale = 2.3, user-scalable = no">
+        <link rel="apple-touch-icon" href="touch-icon-iphone.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="touch-icon-ipad.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="touch-icon-iphone4.png" />
+        <link rel="apple-touch-startup-image" href="/startup.png">
+
+        <link rel="apple-touch-icon" type="image/png" href="/apple-touch-icon.png" />
+        -->
+        <!-- HTML Link Tags -->
+
+        <!-- <link rel="alternate" type="application/rss+xml" title="RSS" href="http://feeds.feedburner.com/martini" />-->
+        <link rel="shortcut icon" type="image/ico" href="assets/favicon.ico" />
+        <!--<link rel="fluid-icon" type="image/png" href="/fluid-icon.png" />-->
+        <!-- <link rel="me" type="text/html" href="https://plus.google.com/u/0/116898352556294954273/about"/>-->
+        <!-- <link rel='shortlink' href='http://blog.unto.net/?p=353' />
+        <link rel='archives' title='May 2003' href='http://blog.unto.net/2003/05/' />
+        <link rel='index' title='DeWitt Clinton' href='http://blog.unto.net/' />
+        <link rel='start' title='Pattern Recognition 1' href='http://blog.unto.net/photos/pattern_recognition_1_about/' />
+        <link rel='prev' title='OpenSearch and OpenID?  A sure way to get my attention.' href='http://blog.unto.net/opensearch/opensearch-and-openid-a-sure-way-to-get-my-attention/' />
+        <link rel='next' title='Not blog' href='http://blog.unto.net/meta/not-blog/' />
+        <link rel="search" href="/search.xml" type="application/opensearchdescription+xml" title="Viatropos" />
+
+        <link rel="self" type="application/atom+xml" href="http://www.syfyportal.com/atomFeed.php?page=3"/>
+        <link rel="first" href="http://www.syfyportal.com/atomFeed.php"/>
+        <link rel="next" href="http://www.syfyportal.com/atomFeed.php?page=4"/>
+        <link rel="previous" href="http://www.syfyportal.com/atomFeed.php?page=2"/>
+        <link rel="last" href="http://www.syfyportal.com/atomFeed.php?page=147"/>
+
+        <link rel='shortlink' href='http://smallbiztrends.com/?p=43625' />
+        <link rel="canonical" href="http://smallbiztrends.com/2010/06/9-things-to-do-before-entering-social-media.html" />
+        <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://smallbiztrends.com/xmlrpc.php?rsd" />
+        <link rel="pingback" href="http://smallbiztrends.com/xmlrpc.php" />
+        -->
+        <!-- ==============================================
+        META TAGS end
+        =============================================== -->
+	</head>
+  
+	<body data-spy="scroll" data-target="#main-nav" data-offset="200">
+	
+		<!-- ==============================================
+		MAIN NAV
+		=============================================== -->
+		<div id="main-nav" class="navbar navbar-fixed-top">
+			<div class="container">
+			
+				<div class="navbar-header">
+				
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#site-nav">
+						<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+					</button>
+					
+					<!-- ======= LOGO ========-->
+					 <a class="navbar-brand scrollto" href="#home">André Krug<br><span>IT-Projektleiter</span></a>
+
+                </div>
+
+                <div id="site-nav" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="sr-only">
+                            <a href="#home" class="scrollto">Start</a>
+                        </li>
+                        <li>
+                            <a href="#services" class="scrollto">Themen</a>
+                        </li>
+                        <li>
+                            <a href="#about" class="scrollto">Über mich</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio" class="scrollto">Meine Projekte</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="scrollto">Kontakt</a>
+                        </li>
+                        <li>
+                            <a href="https://blog.teamwork.cool" class="">Blog</a>
+                        </li>
+                    </ul>
+                </div><!--End navbar-collapse -->
+				
+			</div><!--End container -->
+			
+		</div><!--End main-nav -->
+		
+		<!-- ==============================================
+		HEADER
+		=============================================== -->
+		<header id="home" class="jumbotron">
+		
+			<div class="container">
+			
+				<div class="message-box clearfix">
+				
+					<div class="left-col">
+						<p>Ich heiße <span>André Krug</span><br/>ich bin...</p>
+					</div>	
+					
+					<div class="right-col flexslider home-slider">
+					
+						<ul class="slides">
+						
+							<!-- <li><p>Projektleiter</p></li>-->
+							
+							<li><p>Entwickler</p></li>
+							
+							<li><p>Web-Experte</p></li>
+
+                           <li><p>Berater</p></li>
+
+                           <li><p>Teamleiter</p></li>
+
+                           <li><p>Agile Coach</p></li>
+
+                           <li><p>Scrum Master</p></li>
+
+                        </ul>
+						
+					</div><!--End home-slider -->
+					
+				</div><!--End message-box -->
+				
+			</div><!--End container -->
+			
+		</header><!--End header -->
+
+		<!-- ==============================================
+		SERVICES
+		=============================================== -->
+		<section id="services">
+		
+			<div class="container">
+			
+				<h1 class="section-title scrollimation scale-in">Meine <span>Themen</span><i class="icon-wrench"></i></h1>
+				
+				<div class="row services scrollimation fade-left">
+					<div class="col-md-3 text-center">
+						<a href="#fakelink" class="icon"><i class="icon-flag"></i></a>
+						<h2>Projektmanagement</h2>
+					</div>
+					<div class="col-md-3 details">
+						<p>Initiieren, planen, steuern und kontrollieren von Projekten nach klassischen Methoden (PRINCE2) sowie agilen Vorgehensweisen
+                        (AgilePM, SCRUM und Kanban)
+                        </p>
+					</div>
+					<div class="col-md-3 text-center">
+						<a href="#fakelink" class="icon"><i class="icon-code"></i></a>
+						<h2>Entwicklung</h2>
+					</div>
+					<div class="col-md-3 details">
+						<p>Moderne Frontend Enwicklung auf Basis von HTML5, CSS3 sowie JavaScript.</p>
+                        <p>Entwicklung von Web-Anwendungen auf Basis von PHP und Node.js</p>
+					</div>
+				</div><!--End row (top) -->
+				
+				<div class="row line visible-md visible-lg">
+					<div class="col-md-3"><span class="spot"></span></div>
+					<div class="col-md-3"><span class="spot"></span></div>
+					<div class="col-md-3"><span class="spot"></span></div>
+					<div class="col-md-3"><span class="spot"></span></div>
+				</div><!--End row -->
+				
+				<div class="row services bottom-row scrollimation fade-right">
+					<div class="col-md-3 text-center col-md-push-3">
+						<h2>Konzeption</h2>
+						<a href="#fakelink" class="icon"><i class="icon-pencil"></i></a>
+					</div>
+					<div class="col-md-3 details col-md-pull-3">
+						<p>IT-Konzeption in Zusammenarbeit mit Stakeholdern, unter Beachtung von Governance, Prozessen und Methoden (bspw. Lean Startup oder Design Thinking). </p>
+					</div>
+					<div class="col-md-3 text-center  col-md-push-3">
+						<h2>Beratung</h2>
+						<a href="#fakelink" class="icon"><i class="icon-rocket"></i></a>
+					</div>
+					<div class="col-md-3 details  col-md-pull-3">
+						<p>professionelle Beratung aufgrund von mehr als 16 Jahren Erfahrung und mehr als 120 Projekten in verschiedenen Bereichen der Softwareentwicklung</p>
+					</div>
+				</div><!--End row (bottom)-->
+				
+			</div><!--End container -->
+			
+		</section><!--End services section-->
+		
+		<!-- ==============================================
+		ABOUT
+		=============================================== -->		
+		<section id="about">
+		
+			<div class="container">
+			
+				<div class="row">
+					<div class="col-sm-4 col-sm-offset-1 scrollimation fade-right">
+						<img class="img-responsive img-circle img-center" src="img/ak_top.png" alt="Andre-Krug.de - Header Bild">
+					</div>
+					<div class="col-sm-6 col-sm-offset-1 scrollimation fade-left">
+                        <p>Ich heiße Sie herzlich Willkommen auf meiner Internetseite
+                            <a href="https://www.andre-krug.de">www.andre-krug.de</a>.
+                            Ich hoffe, dass ich Ihnen einen kurzen Eindruck über meine Person
+                            und den von mir realisierten <a href="#portfolio" >Projekten</a> geben kann.</p>
+                        <p>Der Schwerpunkt der von mir realisierten Projekte liegt in der
+                            Umsetzung, Konzeption und Planung von komplexen
+                            Intranet, Extranet, Internet sowie IOT Applikationen und Projekten.</p>
+                        <p>Viele Grüße
+                            <br />
+                            André Krug
+                        </p>
+					</div>
+				</div><!--End row -->
+				
+			</div><!--End container -->
+			
+		</section><!--End about section -->
+	
+		<!-- ==============================================
+		SKILLS
+		=============================================== -->			
+		<section id="skills">
+		
+
+
+					
+				<!--</div>End row -->
+			 <div class="row services">
+                 <h1 class="section-title scrollimation scale-in">Zertifizierungen <span>und</span> Auszeichnungen</h1>
+                 <div class="col-sm-6 col-md-3 text-center">
+
+                     <a href="#fakelink" class="icon"><i class="icon-gears"></i></a>
+                     <h2 class="services text-center">Ausbildung</h2>
+                     <p>
+                         <li>Ausbildung zum Fachinformatiker / Anwendungsentwicklung</li>
+                         <li>Zertifizierter IT-Projektleiter (IHK - Abschluss)</li>
+                     </p>
+                 </div>
+                 <div class="col-sm-6 col-md-3 text-center">
+                     <a href="#fakelink" class="icon"><i class="icon-star"></i></a>
+                     <h2 class="services text-center">Auszeichnungen</h2>
+                     <li>Landesbester bei der Weiterbildungsprüfung als IT-Projektleiter (2012)</li>
+                 </div>
+                 <div class="col-sm-6 col-md-3 text-center">
+                     <a href="#fakelink" class="icon"><i class="icon-certificate"></i></a>
+                     <h2 class="text-center">Zertifizierungen</h2>
+                     <li>Professional Scrum Master (PSM I)</li>
+                     <li>AgilePM® Foundation</li>
+                     <li>Ausbildereignung (AdA)<br/> (IHK - 2011 - 2012)</li>
+                     <li>ITIL v3 Foundation Examination</li>
+                     <li>IREB® Certified Professional for Requirements Engineering, Foundation Level</li>
+                 </div>
+                 <div class="col-sm-6 col-md-3 text-center">
+                     <a href="#fakelink" class="icon"><i class="icon-group"></i></a>
+                    <h2 class="text-center">Lehrgänge</h2>
+                    <li><b>Rethorik</b> - Argumentieren mit Erfolg, Aktive Gesprächsführung und Zielorientiert und effizient in Argumentation und Verhandlung</li>
+                    <li>Hands on Industrie 4.0 und Smart Services</li>
+                    <li>Design Thinking</li>
+                    <li>Agile Business Analyst</li>
+                    <li>Unternehmensgründung im IT - Bereich</li>
+                     
+                 </div>
+                 <div class="col-sm-6 col-md-6 col-sm-offset-1  text-left">
+                        <h2>Weitere Schulungen / Lehrgänge</h2>
+                            <li><b>TYPO3</b> - Intensivschulung und Extension Entwicklung</li>
+                             <li><b>OpenText</b> - Delivery Server Project Builder / Content Management Server (RedDot) Fundamentals und Advanced</li>
+                             <li>Linux in Netzwerken</li>
+                             <li>SharePoint - Web Publishing</li>
+                             <li>Node.js</li>
+                             <li><img src="assets/vis1-3_open_badge.png" alt="Badge for Visual Sketching" width="150px"> Be Visual! Sketching Basics for IT Business</li>
+                             <li>Agile Solutions for Greater Innovation</li>
+                        <h3>Lebenslauf</h3>
+                        <p>
+                        Einen ausführlichen Tabellarischen Lebenslauf mit allen meinen persönlichen Daten, habe ich für Sie auf meiner Webseite hinterlegt. Insofern Interesse an meinem Lebenslauf
+                        besteht, kontaktieren Sie mich, ich sende Ihnen gerne das dazugehörige Passwort für die Datei zu.
+                        <br/>
+                        <br/>
+                        <a href="data/Lebenslauf_AndreKrug.pdf" style="color:#295e94">Zum Lebenslauf</a>
+
+                    </p>
+               </div>
+                <p>&nbsp;</p>
+			 </div>
+
+
+<!--
+            <div class="container">
+
+                <div class="row skills">
+
+                    <div class="col-sm-6 col-md-3 text-center">
+                        <span class="chart" data-percent="80"><span class="percent">80</span></span>
+                        <h2 class="text-center">Web Design</h2>
+                    </div>
+                    <div class="col-sm-6 col-md-3 text-center">
+                        <span class="chart" data-percent="70"><span class="percent">70</span></span>
+                        <h2 class="text-center">HTML / CSS</h2>
+                    </div>
+                    <div class="col-sm-6 col-md-3 text-center">
+                        <span class="chart" data-percent="60"><span class="percent">60</span></span>
+                        <h2 class="text-center">Graphic Design</h2>
+                    </div>
+                    <div class="col-sm-6 col-md-3 text-center">
+                        <span class="chart" data-percent="90"><span class="percent">90</span></span>
+                        <h2 class="text-center">UI / UX</h2>
+                    </div>
+			</div> <!--End container -->
+
+		</section> <!--End skills section -->
+	
+		<!-- ==============================================
+		PORTFOLIO
+		=============================================== -->		
+		<section  id="portfolio">
+		
+			<div id="portfolio-header" class="text-center">
+				
+				<h1 class="section-title scrollimation scale-in">Meine <span>Projekte</span><i class="icon-pencil"></i></h1>
+                <p style="padding-left:5%; padding-right: 5%;">
+                    An dieser Stelle möchte ich einen kleinen Auszug meiner bisher umgesetzten Projekte zur Verfügung stellen.
+                    Bedauerlicherweise sind nicht mehr alle Projekte online oder bereits durch neue Internetseiten abgelöst. Leider darf ich
+                    keine aktuellen Projekte meines Arbeitgebers darstellen, sodass es sich bei den Projekte nur um einen kleinen Ausschnitt der von mir
+                    realisierten Projekte handelt.
+                </p>
+                <p class="small">Die Bilder der Internetseiten wurden mit Einverständnis meiner Arbeitgeber bzw. ehem. Arbeitgeber auf dieser Seite eingestellt. Vielen Dank! i-public, webelements AG, Bachert Datentechnik</p>
+				<!--==== Portfolio Filters ====-->
+				<!--
+				<div id="filter-works">
+					<ul>
+						<li class="active">
+							<a href="#fake" data-filter="*">All</a>
+						</li>
+						<li>
+							<a href="#fake" data-filter=".web-design">Web Design</a>
+						</li>
+						<li>
+							<a href="#fake" data-filter=".icons">Icons</a>
+						</li>
+						<li>
+							<a href="#fake" data-filter=".ui-kits">UI Kits</a>
+						</li>
+					</ul>
+				</div>
+				-->
+				<!--End portfolio filters -->
+				
+			</div><!--End portfolio header -->
+			
+			<div class="container masonry-wrapper scrollimation fade-in">
+			
+				<div id="projects-container">
+				
+					<!-- ==============================================
+					SINGLE PROJECT ITEM
+					=============================================== -->	
+					<a class="project-item web-design" href="http://www.bachert.de" data-images="img/projekte/bachert_relaunch2013_detail1.png, img/projekte/bachert_relaunch2013_detail2.png">
+						
+						<img class="img-responsive project-image" src="img/projekte/bachert_relaunch2013.png"  alt=""><!--Project thumb -->
+						
+						<div class="hover-mask">
+							<h2 class="project-title">Bachert Datentechnik</h2><!--Project Title -->
+							<p>bachert.de</p><!--Project Subtitle -->
+						</div>
+						
+						<!--==== Project Preview HTML ====-->
+						
+						<div class="sr-only project-description">
+							<p><i class="icon-desktop"></i>&nbsp;<i class="icon-tablet"></i>&nbsp;<i class="icon-phone"></i> Seit über 15 Jahren betreue ich die Internetpräsenzen
+                                von Bachert Datentechnik. Angefangen hat alles 2003 mit einem Praktikum und dem Relaunch des
+                                damaligen Internetauftritts, der aus über 1200 einzelnen HTML-Seiten bestand.
+                                In 2003 haben wir die neue Internetseite auf dem PHP basierten Content Management System (CMS) Post Nuke realisiert.</p>
+							<img class="img-responsive img-center" src="img/projekte/logoBachert.png"  alt="Bachert Datentechnik">
+							<p>2010 haben wir den Wechsel des CMS auf TYPO3 vorgenommen. Hierzu wurde eine automatische Übernahme des Contents aus Post Nuke entwickelt.</p>
+							<p>Mit dem Design-Relaunch 2013 haben wir die Seite erweitert und Themen wie Responsive Webdesign oder
+                                die automatische Anbindung an verschiedene Soziale Netwerke vorgenommen.</p>
+                            <ul>
+                                <li>Beratung / Consulting</li>
+                                <li>Projektmanagement</li>
+                                <li>Design und Layout mit dem Ansatz Responsive First</li>
+                                <li>Umsetzung HTML und CSS mit dem Framework Twitter Bootstrap</li>
+                                <li>Umsetzung des Designs in TYPO3</li>
+                                <li>Implementieren und Entwickeln von TYPO3 Extensions</li>
+                                <li>Suchmaschinenoptimierung</li>
+                                <li>Einrichten eines Newstickers und RSS-Feeds der Extension tt_news</li>
+                                <li>Programmieren der Contentübernahme aus dem bisher eingesetzten Content Management System PHP Post Nuke</li>
+                                <li>Erfassen und auswerten von Statistiken mit piwik</li>
+                            </ul>
+						</div>
+						
+					</a>
+					<!-- ==============================================
+					END PROJECT ITEM
+					=============================================== -->						
+					
+					<a class="project-item icons ui-kits" href="#somelink" data-images="img/projekte/ev_deReferenz_2011_detail1.png">
+						
+						<img class="img-responsive project-image" src="img/projekte/ev_deReferenz_start.png" alt=""><!--Project thumb -->
+						
+						<div class="hover-mask">
+							<h2 class="project-title">Evangelisch.de</h2><!--Project Title -->
+							<p>evangelisch.de</p><!--Project Subtitle -->
+						</div>
+						
+						<!--==== Project Preview HTML ====-->
+						
+						<div class="sr-only project-description">
+							<p class="clearfix"><i class="icon-desktop"></i>&nbsp; 2009 wurde das neue Internet Portal der evangelischen Kirche in Deutschland (ekd) evangelisch.de veröffentlicht.
+                            Mein damaliger Arbeitgeber das Gemeinschaftswerk der ev. Publizistik wurde mit der Realisierung,
+                            des Portals sowie der angeschlossenen Community beauftragt. Technisch wurde das Projekt mit dem
+                            Content Management System (CMS) Drupal entwickelt.
+                            </p>
+							<img class="img-responsive img-center" src="https://www.evangelisch.de/sites/default/themes/evde/logo.png" alt="evangelisch.de">
+                            <p>Weiterhin wurde für die Content Verwaltung (Contentpool) das CMS OpenText (RedDot) eingesetzt,
+                                sowie das OpenText Digital Asset Management System Artesia (DAM). Letzteres wurde für den Launch von evangelisch.de neu eingeführt.</p>
+							<p>
+                            Meine Tätigkeiten bei evangelisch.de lagen in den folgenden Themen:
+                            <ul>
+                                <li>Projektmanagement</li>
+                                <li>Konzeption</li>
+                                <li>Anforderungsanalyse</li>
+                                <li>Weiterentwicklung der Internetpräsenz, Applikationen und der Community</li>
+                                <li>Service Management (Verantwortlich für Betrieb und Support)</li>
+                                <li>Steuerung von Internen und Externen Dienstleistern</li>
+                                <li>Qualitätssicherung</li>
+                            </ul>
+                            </p>
+						</div>
+						
+					</a><!--End Project Item -->
+
+					<a class="project-item web-design ui-kits" href="http://www.sanssoucis.net" data-images="img/projekte/sanssoucis_startseite_detail1.png">
+						
+						<img class="img-responsive project-image" src="img/projekte/sanssoucis_front.png"  alt=""><!--Project thumb -->
+						
+						<div class="hover-mask">
+							<h2 class="project-title">sanssoucis.net</h2><!--Project Title -->
+							<p>sanssoucis.net</p><!--Project Subtitle -->
+						</div>
+						
+						<!--==== Project Preview HTML ====-->
+						
+						<div class="sr-only project-description">
+							<p class="clearfix"><i class="icon-desktop"></i>&nbsp;Realisierung und Betreuung der Internetseite sanssoucis.net.</p>
+							<!-- <img class="img-responsive img-center" src="http://www.sanssoucis.net/fileadmin/templates/images/logoHeader.jpg"  alt="Sanssoucis Logo"> -->
+							<p>
+                            <ul>
+                                <li>Beratung</li>
+                                <li>Projektleitung und Planung</li>
+                                <li>Realisierung des Designs</li>
+                                <li>Umsetzung HTML und CSS mit Blueprint</li>
+                                <li>Entwicklung von TYPO3 Templates</li>
+
+                            </ul>
+							</p>
+						</div>
+						
+					</a><!--End Project Item -->
+
+					<a class="project-item ui-kits" href="http://www.computeragentur.com" data-images="img/projekte/epd_referenz_detail1.png">
+						
+						<img class="img-responsive project-image" src="img/projekte/epd_referenz.png"  alt=""><!--Project thumb -->
+						
+						<div class="hover-mask">
+							<h2 class="project-title">Evangelischer Pressedienst</h2><!--Project Title -->
+							<p>epd.de</p><!--Project Subtitle -->
+						</div>
+						
+						<!--==== Project Preview HTML ====-->
+						
+						<div class="sr-only project-description">
+							<p>Weiterentwicklung und Pflege der Internetpräsenz www.epd.de</p>
+							<p>
+                            Der Schwerpunkt meiner Tätigkeiten für den epd lag bei:
+                                <ul>
+                                    <li>Beratung</li>
+                                    <li>Projektleitung in Weiterentwicklungs Projekten</li>
+                                    <li>Sicherstellen des Betriebs</li>
+                                    <li>Key Account Management</li>
+                                    <li>Qualitätssicherung</li>
+                                </ul>
+							</p>
+						</div>
+						
+					</a><!--End Project Item -->
+
+					<a class="project-item icons" href="#somelink" data-images="img/projekte/epdBild_referenz_detail1.png">
+						
+						<img class="img-responsive project-image" src="img/projekte/epdBild_referenz.png"  alt=""><!--Project thumb -->
+						
+						<div class="hover-mask">
+							<h2 class="project-title">epd Bild</h2><!--Project Title -->
+							<p>epd-bild.de</p><!--Project Subtitle -->
+						</div>
+						
+						<!--==== Project Preview HTML ====-->
+						
+						<div class="sr-only project-description">
+							<p class="clearfix">
+                                <i class="icon-desktop">&nbsp; </i>
+                                Relaunch der Internetpräsenz für epd-Bild mit dem Content Management System OpenText Website Management.
+                                Anbindung eines Digital Asset Management Systems (DAM) per SOAP Schnittstelle. </p>
+                            <p>
+                            Meine Tätigkeiten im Projekt:
+                            <ul>
+                            <li>Projektleitung und Planung</li>
+                            <li>Umsetzung HTML und CSS mit YAML</li>
+                            <li>Entwicklung von OpenText Templates</li>
+                            <li>Steuern von Internen und Externen Dienstleistern</li>
+                            <li>Anbindung an eine externe Bilddatenbank per SOAP Webservice</li>
+                            </ul>
+                            </p>
+						</div>
+						
+					</a><!--End Project Item -->
+
+					<a class="project-item web-design" href="https://www.kirche-bremen.de/index2.html" data-images="img/projekte/kirche_bremen_detail1.png, img/projekte/kirche_bremen_detail2.png">
+						
+						<img class="img-responsive project-image" src="img/projekte/kirche_bremen_front.png"  alt=""><!--Project thumb -->
+						
+						<div class="hover-mask">
+							<h2 class="project-title">Kirche-Bremen</h2><!--Project Title -->
+                            <p>kirche-bremen.de</p><!-- Project Subtitle -->
+						</div>
+						
+						<!--==== Project Preview HTML ====-->
+						
+						<div class="sr-only project-description">
+							<p class="clearfix"><i class="icon-desktop"></i>&nbsp;Relaunch der Internetseite für die Landeskirche in Bremen mit dem
+                                Enterprise Content Management System OpenText Web Site Management (RedDot). Übernahme der Inhalte aus dem vorherigen Content Management System (CMS).
+                                Relaunch und Implementierung von ca. 60 Kirchengemeinden. Anbindung an die Gemeindedatenbank der Landeskirche Bremen.
+                            </p>
+							<img class="img-responsive img-center" src="https://kirche-bremen.de/bilder/logo.jpg"  alt="Kirche Bremen">
+							<p>Folgende Tätigkeiten wurden bei der Umsetzung des Relaunches vorgenommen:
+                            <ul>
+                                <li>Projektleitung und Planung</li>
+                                <li>Beratung</li>
+                                <li>Steuern von Internen und Externen Dienstleistern</li>
+                                <li>Umsetzung HTML und CSS mit YAML</li>
+                                <li>Entwicklung von OpenText Templates</li>
+                                <li>Implementierung mit dem Enterprise CMS RedDot</li>
+                                <li>PHP-Programmierung von Zusatz Modulen</li>
+                                <ul>
+                                <li>E-Cards</li>
+                                <li>Bild Mosaik</li>
+                                <li>Podcast Anbindung</li>
+                                </ul>
+                                <li>Koordinierung Contenteinpflege ca. 1200 Seiten</li>
+                                <li>Qualitätssicherung</li>
+
+                            </ul>
+                            </p>
+
+						</div>
+						
+					</a><!--End Project Item -->
+
+				</div><!-- End projects --> 
+				
+			</div><!-- End container --> 
+			
+			<!-- ==============================================
+			PROJECT PREVIEW MODAL (Do not alter this markup)
+			=============================================== -->	
+			<div id="project-modal" class="modal fade">
+			
+				<div class="modal-dialog">
+				
+					<div class="modal-content">
+					
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						</div>
+						
+						<div class="modal-body">
+						
+							<div class="left-col">
+								<img class="img-responsive" src="assets/imac.png" alt="">
+								<div class="loader"></div>
+								<div class="image-wrapper"></div>
+							</div>
+							
+							<h1></h1>
+							
+							<div class="project-descr"></div>
+							
+							<div class="clearfix"></div>
+							
+							<p class="text-center"><a class="btn btn-theme"><i class="icon-external-link"></i>Besuchen Sie die Internetseite</a></p>
+						
+						</div><!-- End modal-body -->
+						
+					</div><!-- End modal-content -->
+					
+				</div><!-- End modal-dialog -->
+				
+			</div><!-- End modal -->
+			
+		</section><!-- End portfolio section -->
+		
+		<!-- ==============================================
+		TWITTER FEED
+		=============================================== -->	
+		<!-- <section id="twitter">
+			<div class="container">
+				<div class="row scrollimation fade-in">
+					<div class="col-sm-1 twitter-icon">
+						<i class="icon-twitter"></i>
+					</div>
+					<div class="col-sm-11">
+						<div id="twitter-slider" class="flexslider" data-widget-id="419226492304773120" data-tweets-length="5">
+						
+						</div>
+					</div>
+                </div>
+            -->    
+                <!-- End row -->
+			<!-- </div> --><!-- End container -->
+			
+		<!-- </section> --> <!-- End Twitter section -->
+
+		<!-- ==============================================
+		CONTACT
+		=============================================== -->	
+		<section  id="contact">
+		
+			<div class="container">
+			
+				<h1 class="section-title scrollimation scale-in">Bleiben Sie in <span>Verbindung</span> mit mir</h1>
+				
+				<div class="row">
+				
+					<div class="col-sm-5 contact-info scrollimation fade-right">
+						
+						<p>
+                            Es gibt verschiedene Arten mit mir Kontakt aufzunehmen. Der leichteste ist sicherlich der Weg per E-Mail an mail(at)andre-krug.de
+                            oder über das folgende Kontaktformular auf dieser Seite. Eine zusätzliche Möglichkeit bieten natürlich auch die Sozialen Netzwerke
+                            wie www.xing.de oder Facebook. Die Links hierzu findet Ihr weiter unten.
+                        </p>
+
+						<address>
+							André Krug<br>
+							Heinrich-Heine-Str. 14<br>
+							35447 Reiskirchen<br>
+							mail(at)andre-krug.de
+						</address>
+						
+						<ul class="socials">
+							<li><a href="http://www.twitter.com/andre_krug" target="_blank"><i class="icon-twitter"></i></a></li>
+							<li><a href="http://www.facebook.de/andre.krug" target="_blank"><i class="icon-facebook"></i></a></li>
+							<li><a href="https://github.com/AndreKrug" target="_blank"><i class="icon-github"></i></a></li>
+							<li><a href="https://plus.google.com/u/0/116898352556294954273/about" target="_blank"><i class="icon-google-plus"></i></a></li>
+                            <li><a href="http://lnkd.in/mv2AfN" target="_blank"><i class="icon-linkedin-sign"></i></a></li>
+                            <li><a href="https://www.xing.com/profiles/Andre_Krug2" target="_blank"><i class="icon-xing-sign"></i></a> </li>
+                        </ul>
+						
+					</div>
+					
+					<!--=== Contact Form ===-->
+
+					<form id="contact-form" class="col-sm-7 scrollimation fade-left" action="contact.php" method="post" novalidate>
+                        <input id="contact-surname" name="contactSurName" placeholder="Mein Name ist..." style="height: 1px;" class="form-control input-lg invisible" type="text" data-error-empty="Bitte trage deinen Namen ein">
+
+                        <div class="form-group">
+						  <label class="control-label" for="contact-name">Name</label>
+						  <div class="controls">
+                              <i class="icon-user"></i>
+                              <input id="contact-name" name="contactName" placeholder="Mein Name ist..." class="form-control input-lg requiredField" type="text" data-error-empty="Bitte trage deinen Namen ein">
+						  </div>
+						</div><!-- End name input -->
+						
+						<div class="form-group">
+						  <label class="control-label" for="contact-mail">Email</label>
+						  <div class=" controls">
+							<i class="icon-envelope"></i>
+							<input id="contact-mail" name="email" placeholder="Bitte antworte an..." class="form-control input-lg requiredField" type="email" data-error-empty="Bitte trage deine E-Mail Adresse ein" data-error-invalid="Ungültige E-Mail Adresse">
+						  </div>
+						</div><!-- End email input -->
+						
+						<div class="form-group">
+						  <label class="control-label" for="contact-message">Message</label>
+							<div class="controls">
+								<i class="icon-comment"></i>
+								<textarea id="contact-message" name="comments"  placeholder="Meine Nachricht an dich..." class="form-control input-lg requiredField" rows="5" data-error-empty="Bitte trage deine Nachricht ein"></textarea>
+							</div>
+						</div><!-- End textarea -->
+						
+						<p><button name="submit" type="submit" class="btn btn-theme btn-lg" data-error-message="Error!" data-sending-message="Sending..." data-ok-message="Message Sent"><i class="icon-location-arrow"></i>Absenden</button></p>
+						<input type="hidden" name="submitted" id="submitted" value="true" />
+						
+					</form><!-- End contact-form -->
+				  
+				</div><!-- End row -->
+				
+			</div><!-- End container -->
+			
+		</section><!-- End contact section -->
+		
+		<!-- ==============================================
+		FOOTER
+		=============================================== -->	
+		<footer id="main-footer">
+		
+			<div class="container">
+			
+				<div class="row">
+				
+					<div class="col-sm-6 left-col">
+						<h1 class="small-logo">André Krug<br><span>IT-Projektleiter</span></h1>
+						<ul class="footer-nav">
+							<li><a class="scrollto" href="#home">Start</a></li>
+                            <li><a class="scrollto" href="#about">Über mich</a></li>
+							<li><a class="scrollto" href="#services">Themen</a></li>
+							<li><a class="scrollto" href="#portfolio">Projekte</a></li>
+                           <!-- <li><a class="scrollto" href="#contact">Kontakt</a></li>-->
+                            <li><a href="https://andre-krug.de/datenschutz.html">Datenschutz</a></li>
+						</ul>
+						<p>&copy;Copyright 2018 / All Rights Reserved</p>
+					</div>
+					
+					<div class="col-sm-6 right-col">
+						<h2>Wer bin ich?</h2>
+						<p>Ich bin ein IT Enthusiast der Projekte mit hoher Qualität und Nutzen für die User realisiert. Ich Interessiere mich insbesondere für neue Themen im Bereich des Projektmanagements und deren Anwendung in der Praxis.
+                            Weiterhin Interessieren mich Themen rund um das Internet wie HTML5 und CSS3</p>
+					</div>
+
+				</div><!-- End row -->
+				<p class="small">Alle verwendeten Bilder stehen alle unter <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Lizenz</a>. Die <a href="http://www.unsplash.com">Quelle</a> für die Bilder ist unsplash.com. Für die Screenshots und Logos der Referenz Projekte gilt eine gesonderte Regelung die mit meinen Arbeitgebern
+                bzw. ehem. Arbeitgebern getroffen wurde.</p>
+                <!-- http://unsplash.s3.amazonaws.com/IMG_5752.jpg -->
+			</div><!-- End container -->
+			
+		</footer><!-- End footer -->
+
+		<!-- ==============================================
+		SCRIPTS
+		=============================================== -->
+		<script src="js/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/libs/jquery-1.8.2.min.js">\x3C/script>')</script>
+		
+		<script src="js/libs/bootstrap.min.js"></script>
+		<script src='js/jquery.scrollto.js'></script>
+		<script src='js/jquery.flexslider.min.js'></script>
+		<script src='js/twitterFetcher_v10_min.js'></script>
+		<script src='js/jquery.masonry.min.js'></script>
+		<script src="js/waypoints.min.js"></script>
+        <script src="js/jquery.backstretch.min.js"></script>
+        <script src="js/akrug.min.js"></script>
+        <script src="js/fix-1-1.js"></script>
+		<!-- <script src="js/jquery.easypiechart.js"></script>
+		<script src="js/contact.js"></script>
+		<script src="js/designr.js"></script>
+		-->
+
+    
+    <!-- Matomo -->
+<script type="text/javascript">
+    var _paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(["setDoNotTrack", true]);
+    _paq.push(["disableCookies"]);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="https://analytics.computeragentur.de/piwik/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '3']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <noscript><p><img src="https://analytics.computeragentur.de/piwik/matomo.php?idsite=3&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+  <!-- End Matomo Code -->
+    </body> 
+</html>

@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="de-DE" class="no-js">
+	<head>
+
+		<!-- ==============================================
+		Title and Meta Tags
+		=============================================== -->
+		<meta charset="utf-8">
+		<title>André Krug | andre-krug.de</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<!-- ==============================================
+		Favicons
+		=============================================== -->
+		<link rel="shortcut icon" href="assets/favicon.ico">
+		<link rel="apple-touch-icon" href="assets/MobileIconsAK_57x57.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="assets/MobileIconsAK_72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="assets/MobileIconsAK_114x114.png">
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/MobileIconsAK_144x144.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/MobileIconsAK_114x114.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/MobileIconsAK_72x72.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/MobileIconsAK_57x57.png">
+        <link rel="apple-touch-startup-image" href="assets/MobileIconsAK_57x57.png" />
+		
+		<!-- ==============================================
+		CSS
+		=============================================== -->    
+        <style>
+            header{display:block}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}body{margin:0}a{background:0 0}h1{margin:.67em 0}img{border:0}button,input{margin:0}button{text-transform:none}button{cursor:pointer;-webkit-appearance:button}button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}*,:after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-size:62.5%;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{font-size:14px;line-height:1.428571429;background-color:#fff}button,input{font-family:inherit;font-size:inherit;line-height:inherit}img{vertical-align:middle}.img-responsive{display:block;height:auto;max-width:100%}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}p{margin:0 0 10px}.text-center{text-align:center}h1{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:500;line-height:1.1;color:inherit}h1{margin-top:20px;margin-bottom:10px}h1{font-size:36px}ul{margin-top:0;margin-bottom:10px}.container{padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}.container:after,.container:before{display:table;content:" "}.container:after{clear:both}@media(min-width:768px){.container{width:750px}}@media(min-width:992px){.container{width:970px}}@media(min-width:1200px){.container{width:1170px}}label{display:inline-block;margin-bottom:5px;font-weight:700}.btn{display:inline-block;padding:6px 12px;margin-bottom:0;font-size:14px;font-weight:400;line-height:1.428571429;text-align:center;white-space:nowrap;vertical-align:middle;cursor:pointer;background-image:none;border:1px solid transparent;border-radius:4px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none}.fade{opacity:0;-webkit-transition:opacity .15s linear;transition:opacity .15s linear}.collapse{display:none}.nav{padding-left:0;margin-bottom:0;list-style:none}.nav:after,.nav:before{display:table;content:" "}.nav:after{clear:both}.nav>li{position:relative;display:block}.nav>li>a{position:relative;display:block;padding:10px 15px}.navbar{position:relative;min-height:50px;border:1px solid transparent}.navbar:after,.navbar:before{display:table;content:" "}.navbar:after{clear:both}@media(min-width:768px){.navbar{border-radius:4px}}.navbar-header:after,.navbar-header:before{display:table;content:" "}.navbar-header:after{clear:both}@media(min-width:768px){.navbar-header{float:left}}.navbar-collapse{max-height:340px;padding-right:15px;padding-left:15px;overflow-x:visible;border-top:1px solid transparent;box-shadow:inset 0 1px 0 rgba(255,255,255,.1);-webkit-overflow-scrolling:touch}.navbar-collapse:after,.navbar-collapse:before{display:table;content:" "}.navbar-collapse:after{clear:both}@media(min-width:768px){.navbar-collapse{width:auto;border-top:0;box-shadow:none}.navbar-collapse.collapse{display:block!important;height:auto!important;padding-bottom:0;overflow:visible!important}.navbar-collapse .navbar-nav.navbar-right:last-child{margin-right:-15px}}.container>.navbar-collapse,.container>.navbar-header{margin-right:-15px;margin-left:-15px}@media(min-width:768px){.container>.navbar-collapse,.container>.navbar-header{margin-right:0;margin-left:0}}.navbar-fixed-top{position:fixed;right:0;left:0;z-index:1030}@media(min-width:768px){.navbar-fixed-top{border-radius:0}}.navbar-fixed-top{top:0;border-width:0 0 1px}.navbar-brand{float:left}@media(min-width:768px){.navbar>.container .navbar-brand{margin-left:-15px}}.navbar-toggle{position:relative;float:right;padding:9px 10px;margin-top:8px;margin-right:15px;margin-bottom:8px;background-color:transparent;border:1px solid transparent;border-radius:4px}.navbar-toggle .icon-bar{display:block;width:22px;height:2px;border-radius:1px}.navbar-toggle .icon-bar+.icon-bar{margin-top:4px}@media(min-width:768px){.navbar-toggle{display:none}}.navbar-nav{margin:7.5px -15px}.navbar-nav>li>a{padding-top:10px;padding-bottom:10px;line-height:20px}@media(min-width:768px){.navbar-nav{float:left;margin:0}.navbar-nav>li{float:left}.navbar-nav>li>a{padding-top:15px;padding-bottom:15px}}@media(min-width:768px){.navbar-right{float:right!important}}.jumbotron{padding:30px;margin-bottom:30px;font-size:21px;font-weight:200;line-height:2.1428571435}.jumbotron p{line-height:1.4}@media screen and (min-width:768px){.jumbotron{padding-top:48px;padding-bottom:48px}}.close{float:right;font-size:21px;font-weight:700;line-height:1;color:#000;text-shadow:0 1px 0 #fff;opacity:.2;filter:alpha(opacity=20)}button.close{padding:0;cursor:pointer;background:0 0;border:0;-webkit-appearance:none}.modal{position:fixed;top:0;right:0;bottom:0;left:0;z-index:1040;display:none;overflow:auto;overflow-y:scroll}.modal.fade .modal-dialog{-o-transition:-o-transform .3s ease-out}.modal-dialog{position:relative;z-index:1050;padding:10px;margin-right:auto;margin-left:auto}.modal-content{position:relative;outline:0;-webkit-box-shadow:0 3px 9px rgba(0,0,0,.5);background-clip:padding-box}.modal-header{min-height:16.428571429px;padding:15px}.modal-body{position:relative;padding:20px}@media screen and (min-width:768px){.modal-dialog{width:600px;padding-top:30px;padding-bottom:30px}.modal-content{-webkit-box-shadow:0 5px 15px rgba(0,0,0,.5);box-shadow:0 5px 15px rgba(0,0,0,.5)}}.clearfix:after,.clearfix:before{display:table;content:" "}.clearfix:after{clear:both}@font-face{font-family:FontAwesome;src:url(../font/fontawesome-webfont.eot?v=3.2.1);src:url(../font/fontawesome-webfont.eot?#iefix&v=3.2.1) format('embedded-opentype'),url(../font/fontawesome-webfont.woff?v=3.2.1) format('woff'),url(../font/fontawesome-webfont.ttf?v=3.2.1) format('truetype'),url(../font/fontawesome-webfont.svg#fontawesomeregular?v=3.2.1) format('svg');font-weight:400;font-style:normal}[class^=icon-]{font-family:FontAwesome;font-weight:400;font-style:normal;text-decoration:inherit;-webkit-font-smoothing:antialiased;*margin-right:.3em}[class^=icon-]:before{text-decoration:inherit;display:inline-block;speak:none}a [class^=icon-]{display:inline}[class^=icon-]{display:inline;width:auto;height:auto;line-height:normal;vertical-align:baseline;background-image:none;background-position:0 0;background-repeat:repeat;margin-top:0}.icon-external-link:before{content:"\f08e"}.slides{margin:0;padding:0;list-style:none}.flexslider{padding:0}.flexslider .slides>li{display:none;-webkit-backface-visibility:hidden}.slides:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}.flexslider{margin:0 0 60px;background:#fff;border:4px solid #fff;position:relative;-webkit-border-radius:4px;-moz-border-radius:4px;-o-border-radius:4px;border-radius:4px;box-shadow:0 1px 4px rgba(0,0,0,.2);-webkit-box-shadow:0 1px 4px rgba(0,0,0,.2);-moz-box-shadow:0 1px 4px rgba(0,0,0,.2);-o-box-shadow:0 1px 4px rgba(0,0,0,.2);zoom:1}.flex-viewport{max-height:2000px;-webkit-transition:all 1s ease;-moz-transition:all 1s ease;transition:all 1s ease}.flexslider .slides{zoom:1}.navbar{margin:0;border-radius:0}body{font-family:Lato,sans-serif}h1{font-family:Lato,sans-serif;color:#295e94}h1{font-size:30px;line-height:30px;font-weight:300;text-transform:uppercase;letter-spacing:.02em}p{font-size:18px;line-height:24px;font-weight:300;letter-spacing:.01em;margin-bottom:20px}a{outline:0!important}a{color:#536177;text-decoration:none}body{color:#999;overflow-x:hidden}#main-nav .navbar-toggle{border:1px solid rgba(255,255,255,.5);border-radius:0}#main-nav .icon-bar{background:#fff}.btn-theme{color:#fff;background-color:#295e94;padding:15px 90px;font-size:24px;font-weight:300;text-transform:uppercase;border:0;border-radius:0;-webkit-transition:background-color .2s ease-out;transition:background-color .2s ease-out}.btn-theme [class*=icon]{margin-right:10px}.navbar-brand{padding:0 10px;font-size:30px;line-height:30px;font-weight:400;color:#fff}.navbar-brand span{font-size:24px;font-weight:300}#main-nav{background:0 0;color:#fff;box-shadow:0 0 0 transparent;-webkit-transition:background .3s ease-out;transition:background .3s ease-out}#main-nav .container{padding:30px 20px;-webkit-transition:padding .5s ease-out;transition:padding .5s ease-out}#main-nav .nav a{padding:0 10px;font-size:18px;line-height:54px;font-weight:400;background:0 0;color:#fff}#main-nav li{background:0 0;margin:0 10px;border:2px solid transparent}#main-nav .nav a{position:relative}#main-nav .nav a:before{position:absolute;bottom:-5px;left:50%;color:transparent;content:'•';text-shadow:0 0 transparent;font-size:16px;line-height:21px;-webkit-transition:text-shadow .3s,color .3s;-moz-transition:text-shadow .3s,color .3s;transition:text-shadow .3s,color .3s;-webkit-transform:translateX(-50%);-moz-transform:translateX(-50%);transform:translateX(-50%);pointer-events:none}#main-nav .nav li.active a:before{color:#fff;text-shadow:12px 0 #fff,-12px 0 #fff}.jumbotron{background:url(../assets/header-bg_small.jpg) no-repeat center center fixed;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;color:#295e94}header.jumbotron{padding:0;margin-bottom:0;min-height:500px}.jumbotron .left-col,.jumbotron .right-col{float:left}.jumbotron .message-box{width:90%;margin:300px auto 0;background:#fff;background:rgba(255,255,255,.9);padding:20px 0}.jumbotron .left-col{width:35%;text-align:right}.jumbotron .right-col{width:65%;text-align:left;overflow:hidden;border:0;box-shadow:none;background:0 0;margin:0;padding:0}.jumbotron .left-col p{display:inline-block;margin:0;padding:18px 5px 12px 30px;font-size:25px;font-weight:300;line-height:48px}.jumbotron .left-col p span{font-size:42px;font-weight:400}.jumbotron .right-col p{display:inline-block;margin:0;padding:10px 30px 10px 5px;font-size:80px;line-height:110px;font-weight:900;text-transform:uppercase}.jumbotron .home-slider .slides li{opacity:0;-webkit-ransition:opacity .4s ease-out;transition:opacity .4s ease-out}.jumbotron .home-slider .slides li.clone,.jumbotron .home-slider .slides li.flex-active-slide{opacity:1}.fade.modal{overflow-x:hidden}.modal.fade .modal-dialog{-webkit-transform:scale(0.7);-moz-transform:scale(0.7);-ms-transform:scale(0.7);transform:scale(0.7);opacity:0;-webkit-transition:all .3s;-moz-transition:all .3s;transition:all .5s}.modal-dialog{width:90%;max-width:1140px;padding-top:50px}.modal-content{border:0;border-radius:0;box-shadow:none;background-color:#fff}.modal-header{height:60px;border:0;border-bottom:1px solid #295e94;margin-bottom:10px}.modal-header .close{font-size:42px;line-height:42px;margin-top:0;-webkit-transition:all .2s ease-out;transition:all .2s ease-out}.modal-body .left-col{float:left;padding:0}.modal-body .left-col{width:50%;margin:0 50px 20px 0;position:relative}.modal-body .left-col{min-height:60px;background:0 0;z-index:1}.modal-body h1{color:#295e94;margin:200px 0 24px;font-size:32px}.modal-body .project-descr{color:#aaa;margin:0 0 24px}.modal-body .btn-theme{margin-top:48px}.modal-body .loader{position:absolute;left:50%;top:0;margin-top:27%;margin-left:-10px;width:30px;height:30px;background:url(../assets/loader.gif) no-repeat 50% 50%}.modal-body .image-wrapper{position:absolute;width:96%;top:4%;left:3%;border:0;z-index:-1;opacity:0;-webkit-transition:all .5s ease-out .7s;transition:all .5s ease-out .7s}#contact-form .form-group label{display:none;font-size:18px;line-height:24px;font-weight:400;text-transform:uppercase}@media (max-width:1199px){.jumbotron .left-col p{font-size:28px;line-height:32px}.jumbotron .left-col p span{font-size:36px}.jumbotron .right-col p{font-size:82px;line-height:82px}}@media (max-width:991px){.jumbotron .message-box{padding:10px 0}.jumbotron .left-col{width:100%;text-align:center}.jumbotron .left-col p{padding:10px}.jumbotron .right-col{width:100%;text-align:center}.jumbotron .right-col p{padding:10px}}@media (max-width:768px){#main-nav .navbar-brand{color:#295e94}#main-nav{background:#fff;border-bottom:1px solid #ddd}#main-nav .navbar-toggle{color:#295e94;border-color:#295e94}#main-nav .navbar-toggle .icon-bar{background:#295e94}#main-nav .container{padding:10px 20px}#main-nav .nav a{color:#295e94;line-height:42px;text-align:center}#main-nav .nav a:before{display:none}#main-nav .nav li.active a{box-shadow:0 0 0 1px}.jumbotron .left-col p{font-size:24px;line-height:28px}.jumbotron .left-col p span{font-size:32px}.jumbotron .right-col p{font-size:62px;line-height:62px}.modal-dialog{max-width:480px}.modal-body .left-col{width:100%}}@media (max-width:479px){.jumbotron .right-col p{font-size:38px;line-height:38px}p{font-size:16px;line-height:21px}.btn-theme{padding:15px 40px;font-size:18px}}
+        </style>
+
+        <script>
+            /*!
+             loadCSS: load a CSS file asynchronously.
+             [c]2014 @scottjehl, Filament Group, Inc.
+             Licensed MIT
+             */
+
+            /* exported loadCSS */
+            function loadCSS( href, before, media, callback ){
+                "use strict";
+                // Arguments explained:
+                // `href` is the URL for your CSS file.
+                // `before` optionally defines the element we'll use as a reference for injecting our <link>
+                // By default, `before` uses the first <script> element in the page.
+                // However, since the order in which stylesheets are referenced matters, you might need a more specific location in your document.
+                // If so, pass a different reference element to the `before` argument and it'll insert before that instead
+                // note: `insertBefore` is used instead of `appendChild`, for safety re: http://www.paulirish.com/2011/surefire-dom-element-insertion/
+                var ss = window.document.createElement( "link" );
+                var ref = before || window.document.getElementsByTagName( "script" )[ 0 ];
+                var sheets = window.document.styleSheets;
+                ss.rel = "stylesheet";
+                ss.href = href;
+                // temporarily, set media to something non-matching to ensure it'll fetch without blocking render
+                ss.media = "only x";
+                // DEPRECATED
+                if( callback ) {
+                    ss.onload = callback;
+                }
+
+                // inject link
+                ref.parentNode.insertBefore( ss, ref );
+                // This function sets the link's media back to `all` so that the stylesheet applies once it loads
+                // It is designed to poll until document.styleSheets includes the new sheet.
+                ss.onloadcssdefined = function( cb ){
+                    var defined;
+                    for( var i = 0; i < sheets.length; i++ ){
+                        if( sheets[ i ].href && sheets[ i ].href === ss.href ){
+                            defined = true;
+                        }
+                    }
+                    if( defined ){
+                        cb();
+                    } else {
+                        setTimeout(function() {
+                            ss.onloadcssdefined( cb );
+                        });
+                    }
+                };
+                ss.onloadcssdefined(function() {
+                    ss.media = media || "all";
+                });
+                return ss;
+            }
+            // load a file
+            loadCSS( "css/akrug.min.css" );
+            loadCSS( "css/fonts.css" );
+
+            
+        </script>
+        <noscript>
+            <link href="css/akrug.min.css" rel="stylesheet">
+            <link href='css/fonts.css' rel='stylesheet' type='text/css'>
+        </noscript>
+
+<!-- https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic,900-->
+
+        <!--<link rel="stylesheet" href="css/akrug.min.css">-->
+        
+        <!-- <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/flexslider.css">
+        <link rel="stylesheet" href="css/designr-theme-cyan.css">
+		-->
+		<!-- ==============================================
+		Fonts
+		=============================================== -->
+
+		
+		<!-- ==============================================
+		JS
+		=============================================== -->
+			
+		<!--[if lt IE 9]>
+			<script src="js/respond.min.js"></script>
+		<![endif]-->
+		
+		<!-- Modenizer vorher -->
+        <script type="text/javascript" async src="js/libs/modernizr.min.js"></script>
+
+        <!-- ==============================================
+		Meta Tags extended
+		=============================================== -->
+
+        <meta name="keywords" content="IT Projektleiter, Lean Startup, ATERN, DSDM, Kanban, Internet, Extranet, Web Projekte"/>
+        <meta name="description" content="Auf meiner Seite finden Sie Informationen über meine realisierte IT-Projekte sowie Informationen zu meiner Person"/>
+        <meta name="subject" content="IT Projektleiter">
+        <meta name="copyright"content="André Krug">
+        <meta name="language" content="DE">
+        <meta name="robots" content="index,follow" />
+        <!--<meta name="revised" content="Sunday, July 18th, 2010, 5:15 pm" />-->
+        <!-- <meta name="abstract" content="">
+        <meta name="topic" content="">
+        <meta name="summary" content="">
+        <meta name="Classification" content="Business">-->
+        <meta name="author" content="André Krug, andre.krug@outlook.de">
+        <!-- <meta name="designer" content="">-->
+        <meta name="copyright" content="André Krug">
+        <!-- <meta name="reply-to" content="email@hotmail.com">-->
+        <meta name="owner" content="André Krug">
+        <meta name="url" content="https://www.andre-krug.de">
+        <meta name="identifier-URL" content="https://www.andre-krug.de">
+        <!--<meta name="directory" content="submission">
+         <meta name="category" content="">-->
+        <meta name="coverage" content="Worldwide">
+        <meta name="distribution" content="Global">
+        <meta name="rating" content="General">
+        <meta name="revisit-after" content="7 days">
+        <meta http-equiv="Expires" content="0">
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="Cache-Control" content="no-cache">
+
+
+        <!-- ## OpenGraph Meta Tags
+        ToDo erstmal außen vor lassen
+        <meta name="og:title" content="The Rock"/>
+        <meta name="og:type" content="movie"/>
+        <meta name="og:url" content="http://www.imdb.com/title/tt0117500/"/>
+        <meta name="og:image" content="http://ia.media-imdb.com/rock.jpg"/>
+        <meta name="og:site_name" content="IMDb"/>
+        <meta name="og:description" content="A group of U.S. Marines, under command of..."/>
+
+        <meta name="fb:page_id" content="43929265776" />
+
+        <meta name="og:email" content="me@example.com"/>
+        <meta name="og:phone_number" content="650-123-4567"/>
+        <meta name="og:fax_number" content="+1-415-123-4567"/>
+
+        <meta name="og:latitude" content="37.416343"/>
+        <meta name="og:longitude" content="-122.153013"/>
+        <meta name="og:street-address" content="1601 S California Ave"/>
+        <meta name="og:locality" content="Palo Alto"/>
+        <meta name="og:region" content="CA"/>
+        <meta name="og:postal-code" content="94304"/>
+        <meta name="og:country-name" content="USA"/>
+
+        <meta property="og:type" content="game.achievement"/>
+        <meta property="og:points" content="POINTS_FOR_ACHIEVEMENT"/>
+        -->
+        <!-- Create Custom Meta Tags
+
+        <meta name="google-analytics" content="1-AHFKALJ"/>
+        <meta name="disqus" content="abcdefg"/>
+        <meta name="uservoice" content="asdfasdf"/>
+        <meta name="mixpanel" content="asdfasdf"/>
+        -->
+        <!-- ## Company/Service Meta Tags -->
+
+        <!-- #### ClaimID -->
+
+        <!-- <meta name="microid" content="mailto+http:sha1:e6058ed7fca4a1921cq91d7f1f3b8736cd3cc1g7" />-->
+
+        <!-- #### Apple Meta Tags
+
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta content="yes" name="apple-touch-fullscreen" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width = 320, initial-scale = 2.3, user-scalable = no">
+-->
+        <!-- #### Internet Explorer Meta Tags
+
+        <meta http-equiv="Page-Enter" content="RevealTrans(Duration=2.0,Transition=2)" />
+        <meta http-equiv="Page-Exit" content="RevealTrans(Duration=3.0,Transition=12)" />
+        <meta name="mssmarttagspreventparsing" content="true">
+        <meta http-equiv="X-UA-Compatible" content="chrome=1">
+        <meta name="msapplication-starturl" content="http://andre-krug.de"/>
+        <meta name="msapplication-window" content="width=800;height=600"/>
+        <meta name="msapplication-navbutton-color" content="red"/>
+        <meta name="application-name" content="André Krug - IT-Projektleiter"/>
+        <meta name="msapplication-tooltip" content="André Krug - IT-Projektleiter"/>
+        <meta name="msapplication-task" content="name=About;action-uri=/about/;icon-uri=/assets/favicon.ico" />
+        <meta name="msapplication-task" content="name=The Big List;action-uri=/the-big-list-of-javascript-css-and-html-development-tools-libraries-projects-and-books/;icon-uri=/images/list_links.ico" />
+        <meta name="msapplication-task" content="name=jQuery Posts;action-uri=/category/jquery/;icon-uri=/images/jquery.ico" />
+        <meta name="msapplication-task" content="name=Start Developing;action-uri=/category/javascript/;icon-uri=/images/script.ico" />
+        <link rel="shortcut icon" href="/images/favicon.ico" />
+-->
+        <!-- #### TweetMeme Meta Tags-->
+
+        <!-- <meta name="tweetmeme-title" content="Retweet Button Explained" />-->
+
+        <!-- #### Blog Catalog Meta Tags -->
+
+
+        <!-- <meta name="blogcatalog" />-->
+
+        <!-- #### Rails Meta Tags-->
+        <!-- <meta name="csrf-param" content="authenticity_token"/>
+        <meta name="csrf-token" content="/bZVwvomkAnwAI1Qd37lFeewvpOIiackk9121fFwWwc="/>
+        -->
+        <!-- #### Apple Tags -->
+
+        <!--<meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="format-detection" content="telephone=no">
+        <meta name= "viewport" content = "width = 320, initial-scale = 2.3, user-scalable = no">
+        <meta name= "viewport" content = "width = device-width">
+        <meta name = "viewport" content = "initial-scale = 1.0">
+        <meta name = "viewport" content = "initial-scale = 2.3, user-scalable = no">
+        <link rel="apple-touch-icon" href="touch-icon-iphone.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="touch-icon-ipad.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="touch-icon-iphone4.png" />
+        <link rel="apple-touch-startup-image" href="/startup.png">
+
+        <link rel="apple-touch-icon" type="image/png" href="/apple-touch-icon.png" />
+        -->
+        <!-- HTML Link Tags -->
+
+        <!-- <link rel="alternate" type="application/rss+xml" title="RSS" href="http://feeds.feedburner.com/martini" />-->
+        <link rel="shortcut icon" type="image/ico" href="assets/favicon.ico" />
+        <!--<link rel="fluid-icon" type="image/png" href="/fluid-icon.png" />-->
+        <!-- <link rel="me" type="text/html" href="https://plus.google.com/u/0/116898352556294954273/about"/>-->
+        <!-- <link rel='shortlink' href='http://blog.unto.net/?p=353' />
+        <link rel='archives' title='May 2003' href='http://blog.unto.net/2003/05/' />
+        <link rel='index' title='DeWitt Clinton' href='http://blog.unto.net/' />
+        <link rel='start' title='Pattern Recognition 1' href='http://blog.unto.net/photos/pattern_recognition_1_about/' />
+        <link rel='prev' title='OpenSearch and OpenID?  A sure way to get my attention.' href='http://blog.unto.net/opensearch/opensearch-and-openid-a-sure-way-to-get-my-attention/' />
+        <link rel='next' title='Not blog' href='http://blog.unto.net/meta/not-blog/' />
+        <link rel="search" href="/search.xml" type="application/opensearchdescription+xml" title="Viatropos" />
+
+        <link rel="self" type="application/atom+xml" href="http://www.syfyportal.com/atomFeed.php?page=3"/>
+        <link rel="first" href="http://www.syfyportal.com/atomFeed.php"/>
+        <link rel="next" href="http://www.syfyportal.com/atomFeed.php?page=4"/>
+        <link rel="previous" href="http://www.syfyportal.com/atomFeed.php?page=2"/>
+        <link rel="last" href="http://www.syfyportal.com/atomFeed.php?page=147"/>
+
+        <link rel='shortlink' href='http://smallbiztrends.com/?p=43625' />
+        <link rel="canonical" href="http://smallbiztrends.com/2010/06/9-things-to-do-before-entering-social-media.html" />
+        <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://smallbiztrends.com/xmlrpc.php?rsd" />
+        <link rel="pingback" href="http://smallbiztrends.com/xmlrpc.php" />
+        -->
+        <!-- ==============================================
+        META TAGS end
+        =============================================== -->
+	</head>
+  
+	<body data-spy="scroll" data-target="#main-nav" data-offset="200">
+	
+		<!-- ==============================================
+		MAIN NAV
+		=============================================== -->
+		<div id="main-nav" class="navbar navbar-fixed-top scrolled">
+			<div class="container">
+			
+				<div class="navbar-header">
+				
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#site-nav">
+						<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+					</button>
+					
+					<!-- ======= LOGO ========-->
+					 <a class="navbar-brand scrollto" href="https://www.andre-krug.de#home">André Krug<br><span>IT-Projektleiter</span></a>
+
+                </div>
+
+                <div id="site-nav" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="sr-only">
+                            <a href="https://www.andre-krug.de#home" class="scrollto">Start</a>
+                        </li>
+                        <li>
+                            <a href="https://www.andre-krug.de#services" class="scrollto">Themen</a>
+                        </li>
+                        <li>
+                            <a href="https://www.andre-krug.de#about" class="scrollto">Über mich</a>
+                        </li>
+                        <li>
+                            <a href="https://www.andre-krug.de#portfolio" class="scrollto">Meine Projekte</a>
+                        </li>
+                        <li>
+                            <a href="https://www.andre-krug.de#contact" class="scrollto">Kontakt</a>
+                        </li>
+                        <li>
+                            <a href="https://blog.andre-krug.de" class="">Blog</a>
+                        </li>
+                    </ul>
+                </div><!--End navbar-collapse -->
+				
+			</div><!--End container -->
+			
+		</div><!--End main-nav -->
+
+<section id="services">
+    <div class="container"> 
+<h2>Datenschutzerklärung</h2>
+    <p>
+    Wir freuen uns sehr über Ihr Interesse an meiner Person Datenschutz hat einen besonders hohen Stellenwert für mich. Eine Nutzung der Internetseit der andre-krug.de ist grundsätzlich ohne jede Angabe personenbezogener Daten möglich. 
+    Sofern eine betroffene Person besondere Services unseres Unternehmens über unsere Internetseite in Anspruch nehmen möchte, könnte jedoch eine Verarbeitung personenbezogener Daten erforderlich werden. Ist die Verarbeitung personenbezogener Daten erforderlich und besteht 
+    für eine solche Verarbeitung keine gesetzliche Grundlage, holen wir generell eine Einwilligung der betroffenen Person ein.
+    </p>
+
+    <p>Die Verarbeitung personenbezogener Daten, beispielsweise des Namens, der Anschrift, E-Mail-Adresse oder Telefonnummer einer betroffenen Person, erfolgt stets im Einklang mit der Datenschutz-Grundverordnung 
+      und in Übereinstimmung mit den für mich (André Krug) geltenden landesspezifischen Datenschutzbestimmungen. Mittels dieser Datenschutzerklärung möchte unser Unternehmen die Öffentlichkeit über Art, Umfang und Zweck der von uns erhobenen, genutzten und verarbeiteten 
+      personenbezogenen Daten informieren. Ferner werden betroffene Personen mittels dieser Datenschutzerklärung über die ihnen zustehenden Rechte aufgeklärt.
+    </p>       
+
+    <p>André Krug hat als für die Verarbeitung Verantwortlicher zahlreiche technische und organisatorische Maßnahmen umgesetzt, um einen möglichst lückenlosen Schutz der über diese 
+      Internetseite verarbeiteten personenbezogenen Daten sicherzustellen. Dennoch können Internetbasierte Datenübertragungen grundsätzlich Sicherheitslücken aufweisen, sodass ein absoluter 
+      Schutz nicht gewährleistet werden kann. Aus diesem Grund steht es jeder betroffenen Person frei, personenbezogene Daten auch auf alternativen Wegen, 
+      beispielsweise telefonisch, an uns zu übermitteln.
+      </p>
+
+    <p>
+      1. Begriffsbestimmungen<br/>
+      Die Datenschutzerklärung von Andre Krug beruht auf den Begrifflichkeiten, die durch den Europäischen Richtlinien- und Verordnungsgeber beim Erlass der Datenschutz-Grundverordnung 
+      (DS-GVO) verwendet wurden. Unsere Datenschutzerklärung soll sowohl für die Öffentlichkeit als auch für unsere Kunden und Geschäftspartner einfach lesbar und verständlich sein. 
+      Um dies zu gewährleisten, möchten wir vorab die verwendeten Begrifflichkeiten erläutern.
+      <br/> 
+      Wir verwenden in dieser Datenschutzerklärung unter anderem die folgenden Begriffe:
+    </p>
+
+    <p>
+      a)    personenbezogene Daten<br/>
+      Personenbezogene Daten sind alle Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person (im Folgenden „betroffene Person“) beziehen. 
+      Als identifizierbar wird eine natürliche Person angesehen, die direkt oder indirekt, insbesondere mittels Zuordnung zu einer Kennung wie einem Namen, zu einer Kennnummer, 
+      zu Standortdaten, zu einer Online-Kennung oder zu einem oder mehreren besonderen Merkmalen, die Ausdruck der physischen, physiologischen, genetischen, psychischen, wirtschaftlichen, 
+      kulturellen oder sozialen Identität dieser natürlichen Person sind, identifiziert werden kann.
+    </p>
+
+    <p>
+      b)    betroffene Person<br/>
+      Betroffene Person ist jede identifizierte oder identifizierbare natürliche Person, deren personenbezogene Daten von dem für die Verarbeitung Verantwortlichen verarbeitet werden.
+    </p>
+    <p>
+      c)    Verarbeitung<br/>
+      Verarbeitung ist jeder mit oder ohne Hilfe automatisierter Verfahren ausgeführte Vorgang oder jede solche Vorgangsreihe im Zusammenhang mit personenbezogenen Daten wie das Erheben, 
+      das Erfassen, die Organisation, das Ordnen, die Speicherung, die Anpassung oder Veränderung, das Auslesen, das Abfragen, die Verwendung, die Offenlegung durch Übermittlung, Verbreitung 
+      oder eine andere Form der Bereitstellung, den Abgleich oder die Verknüpfung, die Einschränkung, das Löschen oder die Vernichtung.
+    </p>
+    <p>
+      d)    Einschränkung der Verarbeitung<br/>
+      Einschränkung der Verarbeitung ist die Markierung gespeicherter personenbezogener Daten mit dem Ziel, ihre künftige Verarbeitung einzuschränken.
+    </p>
+    <p>
+      e)    Profiling<br/>
+      Profiling ist jede Art der automatisierten Verarbeitung personenbezogener Daten, die darin besteht, dass diese personenbezogenen Daten verwendet werden, um bestimmte persönliche Aspekte, die sich auf eine natürliche Person beziehen, zu bewerten, insbesondere, um Aspekte bezüglich Arbeitsleistung, wirtschaftlicher Lage, Gesundheit, persönlicher Vorlieben, Interessen, Zuverlässigkeit, Verhalten, Aufenthaltsort oder Ortswechsel dieser natürlichen Person zu analysieren oder vorherzusagen.
+      </p>
+      <p>
+      f)     Pseudonymisierung<br/>
+      Pseudonymisierung ist die Verarbeitung personenbezogener Daten in einer Weise, auf welche die personenbezogenen Daten ohne Hinzuziehung zusätzlicher Informationen nicht mehr einer spezifischen betroffenen Person zugeordnet werden können, sofern diese zusätzlichen Informationen gesondert aufbewahrt werden und technischen und organisatorischen Maßnahmen unterliegen, die gewährleisten, dass die personenbezogenen Daten nicht einer identifizierten oder identifizierbaren natürlichen Person zugewiesen werden.
+      </p>
+    <p>
+      g)    Verantwortlicher oder für die Verarbeitung Verantwortlicher<br/>
+      Verantwortlicher oder für die Verarbeitung Verantwortlicher ist die natürliche oder juristische Person, Behörde, Einrichtung oder andere Stelle, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten entscheidet. Sind die Zwecke und Mittel dieser Verarbeitung durch das Unionsrecht oder das Recht der Mitgliedstaaten vorgegeben, so kann der Verantwortliche beziehungsweise können die bestimmten Kriterien seiner Benennung nach dem Unionsrecht oder dem Recht der Mitgliedstaaten vorgesehen werden.
+    </p>
+    <p>
+      h)    Auftragsverarbeiter<br/>
+      Auftragsverarbeiter ist eine natürliche oder juristische Person, Behörde, Einrichtung oder andere Stelle, die personenbezogene Daten im Auftrag des Verantwortlichen verarbeitet.
+    </p>
+    <p>
+      i)      Empfänger<br/>
+      Empfänger ist eine natürliche oder juristische Person, Behörde, Einrichtung oder andere Stelle, der personenbezogene Daten offengelegt werden, unabhängig davon, ob es sich bei ihr um einen Dritten handelt oder nicht. Behörden, die im Rahmen eines bestimmten Untersuchungsauftrags nach dem Unionsrecht oder dem Recht der Mitgliedstaaten möglicherweise personenbezogene Daten erhalten, gelten jedoch nicht als Empfänger.
+    </p>
+    <p>
+      j)      Dritter<br/>
+      Dritter ist eine natürliche oder juristische Person, Behörde, Einrichtung oder andere Stelle außer der betroffenen Person, dem Verantwortlichen, dem Auftragsverarbeiter und den Personen, die unter der unmittelbaren Verantwortung des Verantwortlichen oder des Auftragsverarbeiters befugt sind, die personenbezogenen Daten zu verarbeiten.
+    </p>
+    <p>
+      k)    Einwilligung<br/>
+      Einwilligung ist jede von der betroffenen Person freiwillig für den bestimmten Fall in informierter Weise und unmissverständlich abgegebene Willensbekundung in Form einer Erklärung oder einer sonstigen eindeutigen bestätigenden Handlung, mit der die betroffene Person zu verstehen gibt, dass sie mit der Verarbeitung der sie betreffenden personenbezogenen Daten einverstanden ist.
+    </p>
+<p>
+2. Name und Anschrift des für die Verarbeitung Verantwortlichen
+Verantwortlicher im Sinne der Datenschutz-Grundverordnung, sonstiger in den Mitgliedstaaten der Europäischen Union geltenden Datenschutzgesetze 
+und anderer Bestimmungen mit datenschutzrechtlichem Charakter ist die:<br/>
+
+
+André Krug<br/>
+Heinrich-Heine-Str. 14
+<br/>
+35447 Reiskirchen<br/>
+
+Europäische Union (Europäische Union)<br/>
+
+Tel.: +496408660880<br/>
+
+E-Mail: mail@andre-krug.de<br/>
+
+Website: www.andre-krug.de
+<br/>
+</p>
+<p>
+3. Erfassung von allgemeinen Daten und Informationen<br/>
+Die Internetseite von André Krug erfasst mit jedem Aufruf der Internetseite durch eine betroffene Person oder ein automatisiertes System eine Reihe von allgemeinen Daten und Informationen. 
+Diese allgemeinen Daten und Informationen werden in den Logfiles des Servers gespeichert. Erfasst werden können die (1) verwendeten Browsertypen und Versionen, (2) das vom zugreifenden System 
+verwendete Betriebssystem, (3) die Internetseite, von welcher ein zugreifendes System auf unsere Internetseite gelangt (sogenannte Referrer), (4) die Unterwebseiten, welche über ein zugreifendes 
+System auf unserer Internetseite angesteuert werden, (5) das Datum und die Uhrzeit eines Zugriffs auf die Internetseite, (6) eine Internet-Protokoll-Adresse (IP-Adresse), (7) der 
+Internet-Service-Provider des zugreifenden Systems und (8) sonstige ähnliche Daten und Informationen, die der Gefahrenabwehr im Falle von Angriffen auf unsere informationstechnologischen Systeme 
+dienen.
+</p>
+<p>
+Bei der Nutzung dieser allgemeinen Daten und Informationen ziehe ich keine Rückschlüsse auf die betroffene Person. Diese Informationen werden vielmehr benötigt, um (1) die Inhalte 
+unserer Internetseite korrekt auszuliefern, (2) die Inhalte unserer Internetseite sowie die Werbung für diese zu optimieren, (3) die dauerhafte Funktionsfähigkeit unserer informationstechnologischen 
+Systeme und der Technik unserer Internetseite zu gewährleisten sowie (4) um Strafverfolgungsbehörden im Falle eines Cyberangriffes die zur Strafverfolgung notwendigen Informationen bereitzustellen. 
+Diese anonym erhobenen Daten und Informationen werden durch mich daher einerseits statistisch und ferner mit dem Ziel ausgewertet, den Datenschutz und die Datensicherheit in unserem 
+Unternehmen zu erhöhen, um letztlich ein optimales Schutzniveau für die von uns verarbeiteten personenbezogenen Daten sicherzustellen. Die anonymen Daten der Server-Logfiles werden getrennt von 
+allen durch eine betroffene Person angegebenen personenbezogenen Daten gespeichert.
+</p>
+<p>
+4. Routinemäßige Löschung und Sperrung von personenbezogenen Daten<br/>
+Der für die Verarbeitung Verantwortliche verarbeitet und speichert personenbezogene Daten der betroffenen Person nur für den Zeitraum, der zur Erreichung des Speicherungszwecks erforderlich 
+ist oder sofern dies durch den Europäischen Richtlinien- und Verordnungsgeber oder einen anderen Gesetzgeber in Gesetzen oder Vorschriften, welchen der für die Verarbeitung Verantwortliche 
+unterliegt, vorgesehen wurde.
+</p>
+<p>
+Entfällt der Speicherungszweck oder läuft eine vom Europäischen Richtlinien- und Verordnungsgeber oder einem anderen zuständigen Gesetzgeber vorgeschriebene Speicherfrist ab, werden die 
+personenbezogenen Daten routinemäßig und entsprechend den gesetzlichen Vorschriften gesperrt oder gelöscht.
+</p>
+
+<p>
+5. Rechte der betroffenen Person<br/>
+a)    Recht auf Bestätigung<br/>
+Jede betroffene Person hat das vom Europäischen Richtlinien- und Verordnungsgeber eingeräumte Recht, von dem für die Verarbeitung Verantwortlichen eine Bestätigung darüber zu verlangen, 
+ob sie betreffende personenbezogene Daten verarbeitet werden. Möchte eine betroffene Person dieses Bestätigungsrecht in Anspruch nehmen, kann sie sich hierzu jederzeit an einen Mitarbeiter 
+des für die Verarbeitung Verantwortlichen wenden.
+</p>
+<p>
+b)    Recht auf Auskunft<br/>
+Jede von der Verarbeitung personenbezogener Daten betroffene Person hat das vom Europäischen Richtlinien- und Verordnungsgeber gewährte Recht, jederzeit von dem für die Verarbeitung 
+Verantwortlichen unentgeltliche Auskunft über die zu seiner Person gespeicherten personenbezogenen Daten und eine Kopie dieser Auskunft zu erhalten. Ferner hat der Europäische 
+Richtlinien- und Verordnungsgeber der betroffenen Person Auskunft über folgende Informationen zugestanden:
+</p>
+<p>
+die Verarbeitungszwecke<br/>
+die Kategorien personenbezogener Daten, die verarbeitet werden
+die Empfänger oder Kategorien von Empfängern, gegenüber denen die personenbezogenen Daten offengelegt worden sind oder noch offengelegt werden, insbesondere bei Empfängern in Drittländern 
+oder bei internationalen Organisationen falls möglich die geplante Dauer, für die die personenbezogenen Daten gespeichert werden, oder, falls dies nicht möglich ist, die Kriterien für die 
+Festlegung dieser Dauer das Bestehen eines Rechts auf Berichtigung oder Löschung der sie betreffenden personenbezogenen Daten oder auf Einschränkung der Verarbeitung durch den Verantwortlichen 
+oder eines Widerspruchsrechts gegen diese Verarbeitung das Bestehen eines Beschwerderechts bei einer Aufsichtsbehörde wenn die personenbezogenen Daten nicht bei der betroffenen Person erhoben werden: 
+Alle verfügbaren Informationen über die Herkunft der Daten das Bestehen einer automatisierten Entscheidungsfindung einschließlich Profiling gemäß Artikel 22 Abs.1 und 4 DS-GVO und — zumindest in 
+diesen Fällen — aussagekräftige Informationen über die involvierte Logik sowie die Tragweite und die angestrebten Auswirkungen einer derartigen Verarbeitung für die betroffene Person
+Ferner steht der betroffenen Person ein Auskunftsrecht darüber zu, ob personenbezogene Daten an ein Drittland oder an eine internationale Organisation übermittelt wurden. 
+Sofern dies der Fall ist, so steht der betroffenen Person im Übrigen das Recht zu, Auskunft über die geeigneten Garantien im Zusammenhang mit der Übermittlung zu erhalten.
+</p>
+
+<p>
+Möchte eine betroffene Person dieses Auskunftsrecht in Anspruch nehmen, kann sie sich hierzu jederzeit an einen Mitarbeiter des für die Verarbeitung Verantwortlichen wenden.
+</p>
+<p>
+c)    Recht auf Berichtigung<br/>
+Jede von der Verarbeitung personenbezogener Daten betroffene Person hat das vom Europäischen Richtlinien- und Verordnungsgeber gewährte Recht, die unverzügliche Berichtigung 
+sie betreffender unrichtiger personenbezogener Daten zu verlangen. Ferner steht der betroffenen Person das Recht zu, unter Berücksichtigung der Zwecke der Verarbeitung, die 
+Vervollständigung unvollständiger personenbezogener Daten — auch mittels einer ergänzenden Erklärung — zu verlangen.
+</p>
+<p>
+Möchte eine betroffene Person dieses Berichtigungsrecht in Anspruch nehmen, kann sie sich hierzu jederzeit an einen Mitarbeiter des für die Verarbeitung Verantwortlichen wenden.
+</p>
+<p>
+d)    Recht auf Löschung (Recht auf Vergessen werden)<br/>
+Jede von der Verarbeitung personenbezogener Daten betroffene Person hat das vom Europäischen Richtlinien- und Verordnungsgeber gewährte Recht, 
+von dem Verantwortlichen zu verlangen, dass die sie betreffenden personenbezogenen Daten unverzüglich gelöscht werden, sofern einer der folgenden Gründe 
+zutrifft und soweit die Verarbeitung nicht erforderlich ist:
+</p>
+<p>
+Die personenbezogenen Daten wurden für solche Zwecke erhoben oder auf sonstige Weise verarbeitet, für welche sie nicht mehr notwendig sind.
+Die betroffene Person widerruft ihre Einwilligung, auf die sich die Verarbeitung gemäß Art. 6 Abs. 1 Buchstabe a DS-GVO oder Art. 9 Abs. 2 Buchstabe a DS-GVO stützte, und es fehlt an einer anderweitigen Rechtsgrundlage für die Verarbeitung.
+Die betroffene Person legt gemäß Art. 21 Abs. 1 DS-GVO Widerspruch gegen die Verarbeitung ein, und es liegen keine vorrangigen berechtigten Gründe für die Verarbeitung vor, oder die betroffene Person legt gemäß Art. 21 Abs. 2 DS-GVO Widerspruch gegen die Verarbeitung ein.
+Die personenbezogenen Daten wurden unrechtmäßig verarbeitet.
+</p>
+<p>
+Die Löschung der personenbezogenen Daten ist zur Erfüllung einer rechtlichen Verpflichtung nach dem Unionsrecht oder dem Recht der Mitgliedstaaten erforderlich, dem der Verantwortliche unterliegt.
+Die personenbezogenen Daten wurden in Bezug auf angebotene Dienste der Informationsgesellschaft gemäß Art. 8 Abs. 1 DS-GVO erhoben.
+Sofern einer der oben genannten Gründe zutrifft und eine betroffene Person die Löschung von personenbezogenen Daten, die bei der mir gespeichert sind, veranlassen möchte, 
+kann sie sich hierzu jederzeit an einen Mitarbeiter des für die Verarbeitung Verantwortlichen wenden. Andre Krug wird veranlassen, dass dem Löschverlangen 
+unverzüglich nachgekommen wird.
+</p>
+<p>
+Wurden die personenbezogenen Daten von der Andre Krug öffentlich gemacht und ist unser Unternehmen als Verantwortlicher gemäß Art. 17 Abs. 1 DS-GVO zur Löschung der 
+personenbezogenen Daten verpflichtet, so trifft die Andre Krug unter Berücksichtigung der verfügbaren Technologie und der Implementierungskosten angemessene Maßnahmen, auch 
+technischer Art, um andere für die Datenverarbeitung Verantwortliche, welche die veröffentlichten personenbezogenen Daten verarbeiten, darüber in Kenntnis zu setzen, dass die 
+betroffene Person von diesen anderen für die Datenverarbeitung Verantwortlichen die Löschung sämtlicher Links zu diesen personenbezogenen Daten oder von Kopien oder Replikationen 
+dieser personenbezogenen Daten verlangt hat, soweit die Verarbeitung nicht erforderlich ist. Der Mitarbeiter der Andre Krug wird im Einzelfall das Notwendige veranlassen.
+</p>
+<p>
+e)    Recht auf Einschränkung der Verarbeitung<br/>
+Jede von der Verarbeitung personenbezogener Daten betroffene Person hat das vom Europäischen Richtlinien- und Verordnungsgeber gewährte Recht, von dem Verantwortlichen die Einschränkung 
+der Verarbeitung zu verlangen, wenn eine der folgenden Voraussetzungen gegeben ist:
+</p>
+<p>
+Die Richtigkeit der personenbezogenen Daten wird von der betroffenen Person bestritten, und zwar für eine Dauer, die es dem Verantwortlichen ermöglicht, die Richtigkeit der personenbezogenen Daten zu überprüfen.
+Die Verarbeitung ist unrechtmäßig, die betroffene Person lehnt die Löschung der personenbezogenen Daten ab und verlangt stattdessen die Einschränkung der Nutzung der personenbezogenen Daten.
+Der Verantwortliche benötigt die personenbezogenen Daten für die Zwecke der Verarbeitung nicht länger, die betroffene Person benötigt sie jedoch zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen.
+Die betroffene Person hat Widerspruch gegen die Verarbeitung gem. Art. 21 Abs. 1 DS-GVO eingelegt und es steht noch nicht fest, ob die berechtigten Gründe des Verantwortlichen gegenüber denen der betroffenen Person überwiegen.
+Sofern eine der oben genannten Voraussetzungen gegeben ist und eine betroffene Person die Einschränkung von personenbezogenen Daten, die bei der Andre Krug gespeichert sind, verlangen möchte, kann sie sich hierzu jederzeit 
+an einen Mitarbeiter des für die Verarbeitung Verantwortlichen wenden. Der Mitarbeiter der Andre Krug wird die Einschränkung der Verarbeitung veranlassen.
+</p>
+<p>
+f)     Recht auf Datenübertragbarkeit<br/>
+Jede von der Verarbeitung personenbezogener Daten betroffene Person hat das vom Europäischen Richtlinien- und Verordnungsgeber gewährte Recht, die sie betreffenden personenbezogenen Daten, 
+welche durch die betroffene Person einem Verantwortlichen bereitgestellt wurden, in einem strukturierten, gängigen und maschinenlesbaren Format zu erhalten. Sie hat außerdem das Recht, 
+diese Daten einem anderen Verantwortlichen ohne Behinderung durch den Verantwortlichen, dem die personenbezogenen Daten bereitgestellt wurden, zu übermitteln, sofern die Verarbeitung auf 
+der Einwilligung gemäß Art. 6 Abs. 1 Buchstabe a DS-GVO oder Art. 9 Abs. 2 Buchstabe a DS-GVO oder auf einem Vertrag gemäß Art. 6 Abs. 1 Buchstabe b DS-GVO beruht und die Verarbeitung 
+mithilfe automatisierter Verfahren erfolgt, sofern die Verarbeitung nicht für die Wahrnehmung einer Aufgabe erforderlich ist, die im öffentlichen Interesse liegt oder in Ausübung öffentlicher 
+Gewalt erfolgt, welche dem Verantwortlichen übertragen wurde.
+</p>
+
+<p>
+Ferner hat die betroffene Person bei der Ausübung ihres Rechts auf Datenübertragbarkeit gemäß Art. 20 Abs. 1 DS-GVO das Recht, zu erwirken, dass die personenbezogenen Daten direkt 
+von einem Verantwortlichen an einen anderen Verantwortlichen übermittelt werden, soweit dies technisch machbar ist und sofern hiervon nicht die Rechte und Freiheiten anderer Personen 
+beeinträchtigt werden.
+</p>
+<p>
+Zur Geltendmachung des Rechts auf Datenübertragbarkeit kann sich die betroffene Person jederzeit an einen Mitarbeiter der Andre Krug wenden.
+</p>
+<p>
+g)    Recht auf Widerspruch<br/>
+Jede von der Verarbeitung personenbezogener Daten betroffene Person hat das vom Europäischen Richtlinien- und Verordnungsgeber gewährte Recht, aus Gründen, die sich aus ihrer besonderen 
+Situation ergeben, jederzeit gegen die Verarbeitung sie betreffender personenbezogener Daten, die aufgrund von Art. 6 Abs. 1 Buchstaben e oder f DS-GVO erfolgt, Widerspruch einzulegen. 
+Dies gilt auch für ein auf diese Bestimmungen gestütztes Profiling.
+</p>
+<p>
+Die Andre Krug verarbeitet die personenbezogenen Daten im Falle des Widerspruchs nicht mehr, es sei denn, wir können zwingende schutzwürdige Gründe für die Verarbeitung nachweisen, 
+die den Interessen, Rechten und Freiheiten der betroffenen Person überwiegen, oder die Verarbeitung dient der Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen.
+</p>
+<p>
+Verarbeitet die Andre Krug personenbezogene Daten, um Direktwerbung zu betreiben, so hat die betroffene Person das Recht, jederzeit Widerspruch gegen die Verarbeitung der personenbezogenen 
+Daten zum Zwecke derartiger Werbung einzulegen. Dies gilt auch für das Profiling, soweit es mit solcher Direktwerbung in Verbindung steht. Widerspricht die betroffene Person gegenüber der 
+Andre Krug der Verarbeitung für Zwecke der Direktwerbung, so wird die Andre Krug die personenbezogenen Daten nicht mehr für diese Zwecke verarbeiten.
+</p>
+<p>
+Zudem hat die betroffene Person das Recht, aus Gründen, die sich aus ihrer besonderen Situation ergeben, gegen die sie betreffende Verarbeitung personenbezogener Daten, die bei der Andre Krug 
+zu wissenschaftlichen oder historischen Forschungszwecken oder zu statistischen Zwecken gemäß Art. 89 Abs. 1 DS-GVO erfolgen, Widerspruch einzulegen, es sei denn, eine solche Verarbeitung ist zur 
+Erfüllung einer im öffentlichen Interesse liegenden Aufgabe erforderlich.
+</p>
+<p>
+Zur Ausübung des Rechts auf Widerspruch kann sich die betroffene Person direkt an jeden Mitarbeiter der Andre Krug oder einen anderen Mitarbeiter wenden. 
+Der betroffenen Person steht es ferner frei, im Zusammenhang mit der Nutzung von Diensten der Informationsgesellschaft, ungeachtet der Richtlinie 2002/58/EG, 
+ihr Widerspruchsrecht mittels automatisierter Verfahren auszuüben, bei denen technische Spezifikationen verwendet werden.
+</p>
+<p>
+h)    Automatisierte Entscheidungen im Einzelfall einschließlich Profiling<br/>
+Jede von der Verarbeitung personenbezogener Daten betroffene Person hat das vom Europäischen Richtlinien- und Verordnungsgeber gewährte Recht, nicht einer ausschließlich 
+auf einer automatisierten Verarbeitung — einschließlich Profiling — beruhenden Entscheidung unterworfen zu werden, die ihr gegenüber rechtliche Wirkung entfaltet oder sie in 
+ähnlicher Weise erheblich beeinträchtigt, sofern die Entscheidung (1) nicht für den Abschluss oder die Erfüllung eines Vertrags zwischen der betroffenen Person und dem 
+Verantwortlichen erforderlich ist, oder (2) aufgrund von Rechtsvorschriften der Union oder der Mitgliedstaaten, denen der Verantwortliche unterliegt, zulässig ist und diese 
+Rechtsvorschriften angemessene Maßnahmen zur Wahrung der Rechte und Freiheiten sowie der berechtigten Interessen der betroffenen Person enthalten oder (3) mit ausdrücklicher 
+Einwilligung der betroffenen Person erfolgt.
+</p>
+<p>
+Ist die Entscheidung (1) für den Abschluss oder die Erfüllung eines Vertrags zwischen der betroffenen Person und dem Verantwortlichen erforderlich oder (2) erfolgt sie mit 
+ausdrücklicher Einwilligung der betroffenen Person, trifft die Andre Krug angemessene Maßnahmen, um die Rechte und Freiheiten sowie die berechtigten Interessen der 
+betroffenen Person zu wahren, wozu mindestens das Recht auf Erwirkung des Eingreifens einer Person seitens des Verantwortlichen, auf Darlegung des eigenen Standpunkts und auf 
+Anfechtung der Entscheidung gehört.
+</p>
+<p>
+Möchte die betroffene Person Rechte mit Bezug auf automatisierte Entscheidungen geltend machen, kann sie sich hierzu jederzeit an einen Mitarbeiter des für die Verarbeitung Verantwortlichen wenden.
+</p>
+<p>
+i)      Recht auf Widerruf einer datenschutzrechtlichen Einwilligung<br/>
+Jede von der Verarbeitung personenbezogener Daten betroffene Person hat das vom Europäischen Richtlinien- und Verordnungsgeber gewährte Recht, eine Einwilligung zur Verarbeitung 
+personenbezogener Daten jederzeit zu widerrufen.
+</p>
+<p>
+Möchte die betroffene Person ihr Recht auf Widerruf einer Einwilligung geltend machen, kann sie sich hierzu jederzeit an einen Mitarbeiter des für die Verarbeitung Verantwortlichen wenden.
+</p>
+<p>
+6. Rechtsgrundlage der Verarbeitung<br/>
+Art. 6 I lit. a DS-GVO dient unserem Unternehmen als Rechtsgrundlage für Verarbeitungsvorgänge, bei denen wir eine Einwilligung für einen bestimmten Verarbeitungszweck einholen. Ist die Verarbeitung personenbezogener Daten zur Erfüllung eines Vertrags, dessen Vertragspartei die betroffene Person ist, erforderlich, wie dies beispielsweise bei Verarbeitungsvorgängen der Fall ist, die für eine Lieferung von Waren oder die Erbringung einer sonstigen Leistung oder Gegenleistung notwendig sind, so beruht die Verarbeitung auf Art. 6 I lit. b DS-GVO. Gleiches gilt für solche Verarbeitungsvorgänge die zur Durchführung vorvertraglicher Maßnahmen erforderlich sind, etwa in Fällen von Anfragen zur unseren Produkten oder Leistungen. Unterliegt unser Unternehmen einer rechtlichen Verpflichtung durch welche eine Verarbeitung von personenbezogenen Daten erforderlich wird, wie beispielsweise zur Erfüllung steuerlicher Pflichten, so basiert die Verarbeitung auf Art. 6 I lit. c DS-GVO. In seltenen Fällen könnte die Verarbeitung von personenbezogenen Daten erforderlich werden, um lebenswichtige Interessen der betroffenen Person oder einer anderen natürlichen Person zu schützen. Dies wäre beispielsweise der Fall, wenn ein Besucher in unserem Betrieb verletzt werden würde und daraufhin sein Name, sein Alter, seine Krankenkassendaten oder sonstige lebenswichtige Informationen an einen Arzt, ein Krankenhaus oder sonstige Dritte weitergegeben werden müssten. Dann würde die Verarbeitung auf Art. 6 I lit. d DS-GVO beruhen. Letztlich könnten Verarbeitungsvorgänge auf Art. 6 I lit. f DS-GVO beruhen. Auf dieser Rechtsgrundlage basieren Verarbeitungsvorgänge, die von keiner der vorgenannten Rechtsgrundlagen erfasst werden, wenn die Verarbeitung zur Wahrung eines berechtigten Interesses unseres Unternehmens oder eines Dritten erforderlich ist, sofern die Interessen, Grundrechte und Grundfreiheiten des Betroffenen nicht überwiegen. Solche Verarbeitungsvorgänge sind uns insbesondere deshalb gestattet, weil sie durch den Europäischen Gesetzgeber besonders erwähnt wurden. Er vertrat insoweit die Auffassung, dass ein berechtigtes Interesse anzunehmen sein könnte, wenn die betroffene Person ein Kunde des Verantwortlichen ist (Erwägungsgrund 47 Satz 2 DS-GVO).
+</p>
+<p>
+7. Berechtigte Interessen an der Verarbeitung, die von dem Verantwortlichen oder einem Dritten verfolgt werden<br/>
+Basiert die Verarbeitung personenbezogener Daten auf Artikel 6 I lit. f DS-GVO ist unser berechtigtes Interesse die Durchführung unserer Geschäftstätigkeit zugunsten des Wohlergehens 
+all unserer Mitarbeiter und unserer Anteilseigner.
+</p>
+<p>
+8. Dauer, für die die personenbezogenen Daten gespeichert werden<br/>
+Das Kriterium für die Dauer der Speicherung von personenbezogenen Daten ist die jeweilige gesetzliche Aufbewahrungsfrist. Nach Ablauf der Frist werden die entsprechenden Daten
+ routinemäßig gelöscht, sofern sie nicht mehr zur Vertragserfüllung oder Vertragsanbahnung erforderlich sind.
+</p>
+<p>
+9. Gesetzliche oder vertragliche Vorschriften zur Bereitstellung der personenbezogenen Daten; Erforderlichkeit für den Vertragsabschluss; Verpflichtung der betroffenen Person, die 
+personenbezogenen Daten bereitzustellen; mögliche Folgen der Nichtbereitstellung
+Wir klären Sie darüber auf, dass die Bereitstellung personenbezogener Daten zum Teil gesetzlich vorgeschrieben ist (z.B. Steuervorschriften) oder sich auch aus vertraglichen 
+Regelungen (z.B. Angaben zum Vertragspartner) ergeben kann. Mitunter kann es zu einem Vertragsschluss erforderlich sein, dass eine betroffene Person uns personenbezogene Daten zur 
+Verfügung stellt, die in der Folge durch uns verarbeitet werden müssen. Die betroffene Person ist beispielsweise verpflichtet uns personenbezogene Daten bereitzustellen, wenn unser 
+Unternehmen mit ihr einen Vertrag abschließt. Eine Nichtbereitstellung der personenbezogenen Daten hätte zur Folge, dass der Vertrag mit dem Betroffenen nicht geschlossen werden könnte. 
+Vor einer Bereitstellung personenbezogener Daten durch den Betroffenen muss sich der Betroffene an einen unserer Mitarbeiter wenden. Unser Mitarbeiter klärt den Betroffenen einzelfallbezogen 
+darüber auf, ob die Bereitstellung der personenbezogenen Daten gesetzlich oder vertraglich vorgeschrieben oder für den Vertragsabschluss erforderlich ist, ob eine Verpflichtung besteht, die 
+personenbezogenen Daten bereitzustellen, und welche Folgen die Nichtbereitstellung der personenbezogenen Daten hätte.
+</p>
+<p>
+10. Bestehen einer automatisierten Entscheidungsfindung<br/>
+Als verantwortungsbewusstes Unternehmen verzichten wir auf eine automatische Entscheidungsfindung oder ein Profiling.
+</p>
+<p>
+  Diese Datenschutzerklärung wurde durch den Datenschutzerklärungs-Generator der DGD Deutsche Gesellschaft für Datenschutz GmbH, die als Externer Datenschutzbeauftragter Schweinfurt 
+  tätig ist, in Kooperation mit dem Anwalt für Datenschutzrecht Christian Solmecke erstellt.
+</p>
+</div>
+</section>
+		<!-- ==============================================
+		FOOTER
+		=============================================== -->	
+		<footer id="main-footer">
+		
+                <div class="container">
+                
+                    <div class="row">
+                    
+                        <div class="col-sm-6 left-col">
+                            <h1 class="small-logo">André Krug<br><span>IT-Projektleiter</span></h1>
+                            <ul class="footer-nav">
+                                <li><a class="scrollto" href="#home">Start</a></li>
+                                <li><a class="scrollto" href="#about">Über mich</a></li>
+                                <li><a class="scrollto" href="#services">Themen</a></li>
+                                <li><a class="scrollto" href="#portfolio">Projekte</a></li>
+                               <!-- <li><a class="scrollto" href="#contact">Kontakt</a></li>-->
+                                <li><a class="scrollto" href="datenschutz.html">Datenschutz</a></li>
+                            </ul>
+                            <p>&copy;Copyright 2018 / All Rights Reserved</p>
+                        </div>
+                        
+                        <div class="col-sm-6 right-col">
+                            <h2>Wer bin ich?</h2>
+                            <p>Ich bin ein IT Enthusiast der Projekte mit hoher Qualität und Nutzen für die User realisiert. Ich Interessiere mich insbesondere für neue Themen im Bereich des Projektmanagements und deren Anwendung in der Praxis.
+                                Weiterhin Interessieren mich Themen rund um das Internet wie HTML5 und CSS3</p>
+                        </div>
+    
+                    </div><!-- End row -->
+                    <p class="small">Alle verwendeten Bilder stehen alle unter <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Lizenz</a>. Die <a href="http://www.unsplash.com">Quelle</a> für die Bilder ist unsplash.com. Für die Screenshots und Logos der Referenz Projekte gilt eine gesonderte Regelung die mit meinen Arbeitgebern
+                    bzw. ehem. Arbeitgebern getroffen wurde.</p>
+                    <!-- http://unsplash.s3.amazonaws.com/IMG_5752.jpg -->
+                </div><!-- End container -->
+                
+            </footer><!-- End footer -->
+    
+            <!-- ==============================================
+            SCRIPTS
+            =============================================== -->
+            <script src="js/jquery.min.js"></script>
+            <script>window.jQuery || document.write('<script src="js/libs/jquery-1.8.2.min.js">\x3C/script>')</script>
+            
+            <script src="js/libs/bootstrap.min.js"></script>
+            <script src='js/jquery.scrollto.js'></script>
+            <script src='js/jquery.flexslider.min.js'></script>
+            <script src='js/twitterFetcher_v10_min.js'></script>
+            <script src='js/jquery.masonry.min.js'></script>
+            <script src="js/waypoints.min.js"></script>
+            <script src="js/jquery.backstretch.min.js"></script>
+            <script src="js/akrug.min.js"></script>
+            <script src="js/fix-1-1.js"></script>
+            <!-- <script src="js/jquery.easypiechart.js"></script>
+            <script src="js/contact.js"></script>
+            <script src="js/designr.js"></script>
+            -->
+        </body>
+        
+    </html>
