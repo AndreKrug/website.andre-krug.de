@@ -1,0 +1,11 @@
+#<MITTWALD HTACCESS_USER>
+# PLEASE DO NEVER CHANGE THE CODE INSIDE THE <MITTWALD> MARKERS.
+# VERAENDERN SIE BITTE NIEMALS DEN INHALT ZWISCHEN DEN <MITTWALD> MARKERN.
+
+AuthType Basic
+AuthName "stats htaccess"
+AuthUserFile /home/www/p113189/html/stats/.htpasswd.mittwald
+order deny,allow
+allow from all
+require valid-user
+#</MITTWALD HTACCESS_USER>
